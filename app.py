@@ -1,9 +1,10 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile, File, Form
 from pydantic import BaseModel
 from huggingface_hub import hf_hub_download
 from ultralytics import YOLO
 from PIL import Image
-import base64, io, os
+from typing import Optional
+import base64, io, os, requests as http_requests
 
 app = FastAPI(title="FiscAI YOLO API — Etiquetas FO + Manga Detector")
 
@@ -91,13 +92,17 @@ def health():
 
 @app.post("/predict")
 def predict(req: PredictRequest):
-    if req.model not in MODELS:
+    """Recibe imagen en base64 (JSON). Mantiene compatibilidad con clientes existentes."""
+    image = decode_image(req.image_base64)
+    return _run_model(req.model, image, req.conf)
+
+
+def _run_model(model_key: str, image: Image.Image, conf: float) -> dict:
+    """Lógica común de inferencia reutilizada por todos los endpoints."""
+    if model_key not in MODELS:
         raise HTTPException(status_code=400, detail=f"model debe ser: {list(MODELS.keys())}")
-
-    model  = MODELS[req.model]
-    image  = decode_image(req.image_base64)
-    results = model(image, conf=req.conf, verbose=False)
-
+    model = MODELS[model_key]
+    results = model(image, conf=conf, verbose=False)
     detections = []
     for r in results:
         for box in r.boxes:
@@ -107,17 +112,62 @@ def predict(req: PredictRequest):
                 "confidence": round(float(box.conf[0]), 4),
                 "bbox":       [round(v, 1) for v in box.xyxy[0].tolist()],
             })
-
     validation = (
-        validate_manga(detections)         if req.model == "manga"
-        else validate_etiqueta_tapa(detections) if req.model == "etiqueta-tapa"
+        validate_manga(detections)          if model_key == "manga"
+        else validate_etiqueta_tapa(detections) if model_key == "etiqueta-tapa"
         else validate_etiquetas(detections)
     )
-
     return {
-        "model":         req.model,
+        "model":         model_key,
         "detections":    detections,
         "count":         len(detections),
         "classes_found": list({d["class_name"] for d in detections}),
         "validation":    validation,
     }
+
+
+# ── Endpoint para N8N: imagen como archivo (multipart/form-data) ──────────────
+@app.post("/predict-form")
+async def predict_form(
+    image: UploadFile = File(..., description="Imagen JPG/PNG"),
+    model: str        = Form("etiquetas", description="etiquetas | manga | etiqueta-tapa"),
+    conf:  float      = Form(0.25,        description="Confianza mínima 0-1"),
+):
+    """
+    Recibe la imagen como archivo binario (multipart/form-data).
+    Ideal para N8N: envía el binario descargado de Telegram directamente.
+    """
+    try:
+        data = await image.read()
+        img  = Image.open(io.BytesIO(data)).convert("RGB")
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Imagen inválida: {e}")
+    return _run_model(model, img, conf)
+
+
+# ── Endpoint para N8N: imagen por URL (JSON) ──────────────────────────────────
+class PredictUrlRequest(BaseModel):
+    url:   str                        # URL pública o con token en query param
+    model: str   = "etiquetas"        # "etiquetas" | "manga" | "etiqueta-tapa"
+    conf:  float = 0.25
+    bearer_token: Optional[str] = None  # Si la URL requiere Authorization: Bearer
+
+@app.post("/predict-url")
+def predict_url(req: PredictUrlRequest):
+    """
+    Descarga la imagen desde una URL y la analiza.
+    Útil en N8N cuando tienes la URL del archivo de Telegram o Telconet.
+    Si la URL requiere auth, pasa bearer_token.
+    """
+    headers = {}
+    if req.bearer_token:
+        headers["Authorization"] = f"Bearer {req.bearer_token}"
+    try:
+        resp = http_requests.get(req.url, headers=headers, timeout=30)
+        resp.raise_for_status()
+        img = Image.open(io.BytesIO(resp.content)).convert("RGB")
+    except http_requests.exceptions.RequestException as e:
+        raise HTTPException(status_code=502, detail=f"Error descargando imagen: {e}")
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Imagen inválida: {e}")
+    return _run_model(req.model, img, req.conf)
