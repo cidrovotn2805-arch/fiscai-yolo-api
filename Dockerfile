@@ -11,6 +11,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app.py .
+COPY UBICACION_MANGA.pt .
+COPY PANORAMICA_FIGURA_8.pt .
 
 # Render asigna el puerto via $PORT (default 10000)
 EXPOSE 10000

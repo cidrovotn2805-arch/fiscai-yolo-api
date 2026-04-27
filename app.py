@@ -8,21 +8,28 @@ import base64, io, os, requests as http_requests
 
 app = FastAPI(title="FiscAI YOLO API — Etiquetas FO + Manga Detector")
 
-# ── Cargar ambos modelos al iniciar ──────────────────────────────────────────
-def load(repo: str, filename: str = "best.pt") -> YOLO:
+# ── Cargar modelos al iniciar ─────────────────────────────────────────────────
+def load_hf(repo: str, filename: str = "best.pt") -> YOLO:
     path = hf_hub_download(repo_id=repo, filename=filename)
     return YOLO(path)
 
+def load_local(filename: str) -> YOLO:
+    return YOLO(os.path.join(os.path.dirname(__file__), filename))
+
 print("Cargando modelos...")
-MODEL_ETIQUETAS    = load("cidrovo/etiquetas-fo-ingreso")   # ETIQUETA 1, ETIQUETA 2, MANGA
-MODEL_MANGA        = load("cidrovo/manga-detector")          # Manga, Seguros 1, Seguros 2, Tapones
-MODEL_ETIQUETA_TAPA = load("cidrovo/ETIQUETA_TAPA_MANGA")   # Etiqueta, Manga
+MODEL_ETIQUETAS     = load_hf("cidrovo/etiquetas-fo-ingreso")   # ETIQUETA 1, ETIQUETA 2, MANGA
+MODEL_MANGA         = load_hf("cidrovo/manga-detector")          # Manga, Seguros 1, Seguros 2, Tapones
+MODEL_ETIQUETA_TAPA = load_hf("cidrovo/ETIQUETA_TAPA_MANGA")    # Etiqueta, Manga
+MODEL_UBICACION     = load_local("UBICACION_MANGA.pt")           # DISTANCIA, MANGA, POSTE
+MODEL_PANORAMICA    = load_local("PANORAMICA_FIGURA_8.pt")       # MANGA, RESERVA, 1 RESERVA 2
 print("Modelos listos.")
 
 MODELS = {
-    "etiquetas":    MODEL_ETIQUETAS,
-    "manga":        MODEL_MANGA,
-    "etiqueta-tapa": MODEL_ETIQUETA_TAPA,
+    "etiquetas":        MODEL_ETIQUETAS,
+    "manga":            MODEL_MANGA,
+    "etiqueta-tapa":    MODEL_ETIQUETA_TAPA,
+    "ubicacion-manga":  MODEL_UBICACION,
+    "panoramica-f8":    MODEL_PANORAMICA,
 }
 
 
@@ -61,6 +68,34 @@ def validate_etiqueta_tapa(detections: list) -> dict:
         "etiqueta_presente": etiqueta_ok,
         "manga_presente":    manga_ok,
         "aprobado":          etiqueta_ok,
+    }
+
+
+def validate_ubicacion_manga(detections: list) -> dict:
+    """Valida la ubicación de la manga respecto al poste."""
+    names = {d["class_name"] for d in detections}
+    manga_ok     = "MANGA"     in names
+    poste_ok     = "POSTE"     in names
+    distancia_ok = "DISTANCIA" in names
+    aprobado = manga_ok and poste_ok
+    return {
+        "manga_presente":     manga_ok,
+        "poste_presente":     poste_ok,
+        "distancia_presente": distancia_ok,
+        "aprobado":           aprobado,
+    }
+
+
+def validate_panoramica_f8(detections: list) -> dict:
+    """Valida la vista panorámica con figura 8 (reserva de cable)."""
+    names = {d["class_name"] for d in detections}
+    manga_ok   = "MANGA"       in names
+    reserva_ok = "RESERVA"     in names or "1 RESERVA 2" in names
+    aprobado = manga_ok and reserva_ok
+    return {
+        "manga_presente":   manga_ok,
+        "reserva_presente": reserva_ok,
+        "aprobado":         aprobado,
     }
 
 
@@ -113,8 +148,10 @@ def _run_model(model_key: str, image: Image.Image, conf: float) -> dict:
                 "bbox":       [round(v, 1) for v in box.xyxy[0].tolist()],
             })
     validation = (
-        validate_manga(detections)          if model_key == "manga"
-        else validate_etiqueta_tapa(detections) if model_key == "etiqueta-tapa"
+        validate_manga(detections)             if model_key == "manga"
+        else validate_etiqueta_tapa(detections)    if model_key == "etiqueta-tapa"
+        else validate_ubicacion_manga(detections)  if model_key == "ubicacion-manga"
+        else validate_panoramica_f8(detections)    if model_key == "panoramica-f8"
         else validate_etiquetas(detections)
     )
     return {
