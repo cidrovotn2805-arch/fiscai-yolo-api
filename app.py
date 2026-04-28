@@ -3,33 +3,35 @@ from pydantic import BaseModel
 from ultralytics import YOLO
 from PIL import Image
 from typing import Optional
-import base64, io, os, requests as http_requests
+import base64, io, os, gc, threading, requests as http_requests
 
 app = FastAPI(title="FiscAI YOLO API — Todos los modelos de manga")
 
-# ── Carga segura desde archivo local ─────────────────────────────────────────
-def load_local(filename: str) -> Optional[YOLO]:
-    try:
-        return YOLO(os.path.join(os.path.dirname(__file__), filename))
-    except Exception as e:
-        print(f"⚠  No se pudo cargar {filename}: {e}")
-        return None
+# ── Lazy loading: solo 1 modelo en memoria a la vez ──────────────────────────
+_model_lock  = threading.Lock()
+_model_cache: dict = {}   # { model_key: YOLO }
 
-print("Cargando modelos...")
-MODEL_MANGA         = load_local("MANGA_SELLADA.pt")          # Foto 1: Manga, Seguros 1, Seguros 2, Tapones
-MODEL_ETIQUETAS     = load_local("ETIQUETAS_FO_INGRESO.pt")   # Foto 2: ETIQUETA 1, ETIQUETA 2, MANGA
-MODEL_ETIQUETA_TAPA = load_local("ETIQUETA_TAPA_MANGA.pt")    # Foto 3: Etiqueta, Manga
-MODEL_UBICACION     = load_local("UBICACION_MANGA.pt")        # Foto 4: DISTANCIA, MANGA, POSTE
-MODEL_PANORAMICA    = load_local("PANORAMICA_FIGURA_8.pt")    # Foto 5: MANGA, RESERVA, 1 RESERVA 2
-print("Modelos listos.")
-
-MODELS = {
-    "etiquetas":       MODEL_ETIQUETAS,
-    "manga":           MODEL_MANGA,
-    "etiqueta-tapa":   MODEL_ETIQUETA_TAPA,
-    "ubicacion-manga": MODEL_UBICACION,
-    "panoramica-f8":   MODEL_PANORAMICA,
+MODEL_FILES = {
+    "manga":           "MANGA_SELLADA.pt",
+    "etiquetas":       "ETIQUETAS_FO_INGRESO.pt",
+    "etiqueta-tapa":   "ETIQUETA_TAPA_MANGA.pt",
+    "ubicacion-manga": "UBICACION_MANGA.pt",
+    "panoramica-f8":   "PANORAMICA_FIGURA_8.pt",
 }
+
+def _get_model(model_key: str) -> YOLO:
+    with _model_lock:
+        if model_key not in _model_cache:
+            # Liberar todos los modelos cargados para no superar 512 MB
+            for k in list(_model_cache.keys()):
+                del _model_cache[k]
+            gc.collect()
+            # Cargar el modelo solicitado desde disco
+            path = os.path.join(os.path.dirname(__file__), MODEL_FILES[model_key])
+            print(f"[lazy] Cargando modelo: {model_key} ({MODEL_FILES[model_key]})")
+            _model_cache[model_key] = YOLO(path)
+            print(f"[lazy] Modelo listo: {model_key}")
+        return _model_cache[model_key]
 
 
 class PredictRequest(BaseModel):
@@ -70,15 +72,12 @@ def validate_etiqueta_tapa(detections: list) -> dict:
 
 
 def validate_manga(detections: list) -> dict:
-    """Foto 1 — Manga correctamente sellada.
-    Aprueba si la manga es visible en la foto.
-    """
+    """Foto 1 — Manga correctamente sellada."""
     names = {d["class_name"] for d in detections}
     manga_ok   = "Manga"     in names
     seguro1_ok = "Seguros 1" in names
     seguro2_ok = "Seguros 2" in names
     tapones_ok = "Tapones"   in names
-    # Aprueba con solo detectar la manga — criterio principal de foto 1
     aprobado = manga_ok
     return {
         "manga_presente":    manga_ok,
@@ -91,10 +90,7 @@ def validate_manga(detections: list) -> dict:
 
 
 def validate_ubicacion_manga(detections: list) -> dict:
-    """Foto 4 — Manga instalada en poste o mensajero.
-    Clases del modelo: DISTANCIA, MANGA, POSTE.
-    Aprueba si la manga Y el poste son visibles.
-    """
+    """Foto 4 — Manga instalada en poste o mensajero."""
     names = {d["class_name"] for d in detections}
     manga_ok     = "MANGA"     in names
     poste_ok     = "POSTE"     in names
@@ -108,27 +104,26 @@ def validate_ubicacion_manga(detections: list) -> dict:
 
 
 def validate_panoramica_f8(detections: list) -> dict:
-    """Foto 5 — Panorámica del poste. Siempre aprobada (foto documental).
-    Clases del modelo: MANGA, RESERVA, 1 RESERVA 2.
-    """
+    """Foto 5 — Panorámica del poste. Siempre aprobada (foto documental)."""
     names = {d["class_name"] for d in detections}
     manga_ok   = "MANGA"   in names
     reserva_ok = "RESERVA" in names or "1 RESERVA 2" in names
     return {
         "manga_presente":   manga_ok,
         "reserva_presente": reserva_ok,
-        "aprobado":         True,   # Foto documental — siempre aprobada
+        "aprobado":         True,
     }
 
 
 @app.get("/health")
 def health():
-    disponibles = {k: list(m.names.values()) for k, m in MODELS.items() if m is not None}
-    faltantes   = [k for k, m in MODELS.items() if m is None]
+    base = os.path.dirname(__file__)
+    disponibles = [k for k, f in MODEL_FILES.items() if os.path.exists(os.path.join(base, f))]
+    cargados    = list(_model_cache.keys())
     return {
-        "status":      "ok" if not faltantes else "degradado",
+        "status":      "ok",
         "disponibles": disponibles,
-        "faltantes":   faltantes,
+        "cargados":    cargados,
     }
 
 
@@ -140,18 +135,12 @@ def predict(req: PredictRequest):
 
 
 def _run_model(model_key: str, image: Image.Image, conf: float) -> dict:
-    """Lógica común de inferencia."""
-    if model_key not in MODELS:
+    if model_key not in MODEL_FILES:
         raise HTTPException(
             status_code=400,
-            detail=f"model debe ser uno de: {list(MODELS.keys())}"
+            detail=f"model debe ser uno de: {list(MODEL_FILES.keys())}"
         )
-    model = MODELS[model_key]
-    if model is None:
-        raise HTTPException(
-            status_code=503,
-            detail=f"Modelo '{model_key}' no disponible"
-        )
+    model = _get_model(model_key)
     results = model(image, conf=conf, verbose=False)
     detections = []
     for r in results:
