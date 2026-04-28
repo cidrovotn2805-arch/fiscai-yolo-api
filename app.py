@@ -1,6 +1,5 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form
 from pydantic import BaseModel
-from huggingface_hub import hf_hub_download
 from ultralytics import YOLO
 from PIL import Image
 from typing import Optional
@@ -8,16 +7,7 @@ import base64, io, os, requests as http_requests
 
 app = FastAPI(title="FiscAI YOLO API — Todos los modelos de manga")
 
-# ── Carga segura desde HuggingFace ───────────────────────────────────────────
-def load_hf(repo: str, filename: str = "best.pt") -> Optional[YOLO]:
-    try:
-        path = hf_hub_download(repo_id=repo, filename=filename)
-        return YOLO(path)
-    except Exception as e:
-        print(f"⚠  No se pudo cargar {repo}: {e}")
-        return None
-
-# ── Carga desde archivo local (modelos subidos directamente a Render) ─────────
+# ── Carga segura desde archivo local ─────────────────────────────────────────
 def load_local(filename: str) -> Optional[YOLO]:
     try:
         return YOLO(os.path.join(os.path.dirname(__file__), filename))
@@ -26,11 +16,11 @@ def load_local(filename: str) -> Optional[YOLO]:
         return None
 
 print("Cargando modelos...")
-MODEL_ETIQUETAS     = load_hf("cidrovo/etiquetas-fo-ingreso")   # Foto 2: ETIQUETA 1, ETIQUETA 2, MANGA
-MODEL_MANGA         = load_hf("cidrovo/manga-detector")          # Foto 1: Manga, Seguros 1, Seguros 2, Tapones
-MODEL_ETIQUETA_TAPA = load_hf("cidrovo/ETIQUETA_TAPA_MANGA")    # Foto 3: Etiqueta, Manga
-MODEL_UBICACION     = load_local("UBICACION_MANGA.pt")           # Foto 4: DISTANCIA, MANGA, POSTE
-MODEL_PANORAMICA    = load_local("PANORAMICA_FIGURA_8.pt")       # Foto 5: MANGA, RESERVA, 1 RESERVA 2
+MODEL_MANGA         = load_local("MANGA_SELLADA.pt")          # Foto 1: Manga, Seguros 1, Seguros 2, Tapones
+MODEL_ETIQUETAS     = load_local("ETIQUETAS_FO_INGRESO.pt")   # Foto 2: ETIQUETA 1, ETIQUETA 2, MANGA
+MODEL_ETIQUETA_TAPA = load_local("ETIQUETA_TAPA_MANGA.pt")    # Foto 3: Etiqueta, Manga
+MODEL_UBICACION     = load_local("UBICACION_MANGA.pt")        # Foto 4: DISTANCIA, MANGA, POSTE
+MODEL_PANORAMICA    = load_local("PANORAMICA_FIGURA_8.pt")    # Foto 5: MANGA, RESERVA, 1 RESERVA 2
 print("Modelos listos.")
 
 MODELS = {
