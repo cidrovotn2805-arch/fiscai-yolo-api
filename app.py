@@ -137,12 +137,22 @@ def predict(req: PredictRequest):
     return _run_model(req.model, image, req.conf)
 
 
+# Umbrales máximos por modelo — el cliente puede pedir menos, no más
+MODEL_MAX_CONF = {
+    "etiquetas":      0.25,  # ETIQUETA detectada entre 0.25-0.46 según foto
+    "panoramica-f8":  0.05,  # modelo de bajo confidence en vistas aéreas
+}
+
 def _run_model(model_key: str, image: Image.Image, conf: float) -> dict:
     if model_key not in MODEL_FILES:
         raise HTTPException(
             status_code=400,
             detail=f"model debe ser uno de: {list(MODEL_FILES.keys())}"
         )
+    # Aplicar umbral máximo por modelo (ignorar conf alto enviado por cliente)
+    max_conf = MODEL_MAX_CONF.get(model_key)
+    if max_conf is not None and conf > max_conf:
+        conf = max_conf
     model = _get_model(model_key)
     results = model(image, conf=conf, verbose=False)
     detections = []
