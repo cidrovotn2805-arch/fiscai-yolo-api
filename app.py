@@ -48,14 +48,17 @@ def decode_image(b64: str) -> Image.Image:
 
 
 def validate_etiquetas(detections: list) -> dict:
-    """Foto 2 — Etiquetas en FO al ingreso."""
+    """Foto 2 — Etiquetas en FO al ingreso.
+    El modelo puede clasificar ambas etiquetas como ETIQUETA 2.
+    Aprobado si al menos una etiqueta es visible.
+    """
     names = {d["class_name"] for d in detections}
     e1 = "ETIQUETA 1" in names
     e2 = "ETIQUETA 2" in names
     return {
         "etiqueta1_presente": e1,
         "etiqueta2_presente": e2,
-        "aprobado": e1 and e2,
+        "aprobado": e1 or e2,  # al menos una etiqueta visible
     }
 
 
