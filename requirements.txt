@@ -2,6 +2,5 @@ fastapi
 uvicorn[standard]
 ultralytics
 pillow
-huggingface_hub
 python-multipart
 requests

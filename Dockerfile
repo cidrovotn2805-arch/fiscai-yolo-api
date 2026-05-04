@@ -11,6 +11,9 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app.py .
+COPY MANGA_SELLADA.pt .
+COPY ETIQUETAS_FO_INGRESO.pt .
+COPY ETIQUETA_TAPA_MANGA.pt .
 COPY UBICACION_MANGA.pt .
 COPY PANORAMICA_FIGURA_8.pt .
 
