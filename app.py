@@ -87,11 +87,14 @@ def validate_ubicacion_manga(detections: list) -> dict:
 
 
 def validate_panoramica_f8(detections: list) -> dict:
-    """Valida la vista panorámica con figura 8 (reserva de cable)."""
+    """Valida la vista panorámica con figura 8 (reserva de cable).
+    Desde fotos panorámicas aéreas el modelo detecta MANGA con baja confianza
+    y RESERVA raramente — se aprueba si al menos la MANGA es visible.
+    """
     names = {d["class_name"] for d in detections}
     manga_ok   = "MANGA"       in names
     reserva_ok = "RESERVA"     in names or "1 RESERVA 2" in names
-    aprobado = manga_ok and reserva_ok
+    aprobado = manga_ok  # RESERVA es bonus — no requerida desde vistas aéreas
     return {
         "manga_presente":   manga_ok,
         "reserva_presente": reserva_ok,
