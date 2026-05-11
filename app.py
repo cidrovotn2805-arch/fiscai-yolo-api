@@ -12,11 +12,17 @@ _model_lock  = threading.Lock()
 _model_cache: dict = {}   # { model_key: YOLO }
 
 MODEL_FILES = {
+    # ── Mangas estándar (5 hilos) ────────────────────────────────────────────
     "manga":           "MANGA_SELLADA.pt",
     "etiquetas":       "ETIQUETAS_FO_INGRESO.pt",
     "etiqueta-tapa":   "ETIQUETA_TAPA_MANGA.pt",
     "ubicacion-manga": "UBICACION_MANGA.pt",
     "panoramica-f8":   "PANORAMICA_FIGURA_8.pt",
+    # ── Mangas de 2 hilos ───────────────────────────────────────────────────
+    "manga-2h":           "2H_MANGA_SELLADA.pt",
+    "etiqueta-tapa-2h":   "2H_ETIQUETA_TAPA_MANGA.pt",
+    "ubicacion-manga-2h": "2H_UBICACION_MANGA.pt",
+    "panoramica-f8-2h":   "2H_PANORAMICA_FIGURA_8.pt",
 }
 
 def _get_model(model_key: str) -> YOLO:
@@ -165,10 +171,10 @@ def _run_model(model_key: str, image: Image.Image, conf: float) -> dict:
                 "bbox":       [round(v, 1) for v in box.xyxy[0].tolist()],
             })
     validation = (
-        validate_manga(detections)              if model_key == "manga"
-        else validate_etiqueta_tapa(detections) if model_key == "etiqueta-tapa"
-        else validate_ubicacion_manga(detections) if model_key == "ubicacion-manga"
-        else validate_panoramica_f8(detections) if model_key == "panoramica-f8"
+        validate_manga(detections)              if model_key in ("manga", "manga-2h")
+        else validate_etiqueta_tapa(detections) if model_key in ("etiqueta-tapa", "etiqueta-tapa-2h")
+        else validate_ubicacion_manga(detections) if model_key in ("ubicacion-manga", "ubicacion-manga-2h")
+        else validate_panoramica_f8(detections) if model_key in ("panoramica-f8", "panoramica-f8-2h")
         else validate_etiquetas(detections)
     )
     return {
