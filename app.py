@@ -49,28 +49,33 @@ def decode_image(b64: str) -> Image.Image:
 
 def validate_etiquetas(detections: list) -> dict:
     """Foto 2 — Etiquetas en FO al ingreso.
-    El modelo puede clasificar ambas etiquetas como ETIQUETA 2.
-    Aprobado si al menos una etiqueta es visible.
+    Modelo v2: clases ETIQUETA_FO(0) y MANGA(1).
+    Aprobado si se detecta al menos una ETIQUETA_FO.
     """
     names = {d["class_name"] for d in detections}
-    e1 = "ETIQUETA 1" in names
-    e2 = "ETIQUETA 2" in names
+    etiqueta_ok = "ETIQUETA_FO" in names
+    manga_ok    = "MANGA" in names
+    count_etiquetas = sum(1 for d in detections if d["class_name"] == "ETIQUETA_FO")
     return {
-        "etiqueta1_presente": e1,
-        "etiqueta2_presente": e2,
-        "aprobado": e1 or e2,  # al menos una etiqueta visible
+        "etiqueta_fo_presente": etiqueta_ok,
+        "manga_presente":       manga_ok,
+        "cantidad_etiquetas":   count_etiquetas,
+        "aprobado":             etiqueta_ok,
     }
 
 
 def validate_etiqueta_tapa(detections: list) -> dict:
-    """Foto 3 — Etiqueta en tapa exterior de manga."""
+    """Foto 3 — Etiqueta en tapa exterior de manga.
+    Modelo v2: clases ETIQUETA_TAPA(0) y MANGA(1).
+    Aprobado si se detecta ETIQUETA_TAPA.
+    """
     names = {d["class_name"] for d in detections}
-    etiqueta_ok = "Etiqueta" in names or "clase_0" in names or len(detections) > 0
-    manga_ok    = "Manga"    in names or "clase_1" in names
+    etiqueta_ok = "ETIQUETA_TAPA" in names
+    manga_ok    = "MANGA" in names
     return {
-        "etiqueta_presente": etiqueta_ok,
-        "manga_presente":    manga_ok,
-        "aprobado":          etiqueta_ok,
+        "etiqueta_tapa_presente": etiqueta_ok,
+        "manga_presente":         manga_ok,
+        "aprobado":               etiqueta_ok,
     }
 
 
@@ -107,14 +112,16 @@ def validate_ubicacion_manga(detections: list) -> dict:
 
 
 def validate_panoramica_f8(detections: list) -> dict:
-    """Foto 5 — Panorámica del poste. Siempre aprobada (foto documental)."""
+    """Foto 5 — Panorámica figura 8. Siempre aprobada (foto documental).
+    Modelo v2: clases FIGURA_8(0) y MANGA(1).
+    """
     names = {d["class_name"] for d in detections}
-    manga_ok   = "MANGA"   in names
-    reserva_ok = "RESERVA" in names or "1 RESERVA 2" in names
+    figura8_ok = "FIGURA_8" in names
+    manga_ok   = "MANGA"    in names
     return {
+        "figura8_presente": figura8_ok,
         "manga_presente":   manga_ok,
-        "reserva_presente": reserva_ok,
-        "aprobado":         True,
+        "aprobado":         True,  # foto documental, siempre aprobada
     }
 
 
@@ -139,8 +146,9 @@ def predict(req: PredictRequest):
 
 # Umbrales máximos por modelo — el cliente puede pedir menos, no más
 MODEL_MAX_CONF = {
-    "etiquetas":      0.25,  # ETIQUETA detectada entre 0.25-0.46 según foto
-    "panoramica-f8":  0.05,  # modelo de bajo confidence en vistas aéreas
+    # v2: mAP50=0.9950 — umbral subido, modelo muy preciso
+    # "etiquetas": sin límite máximo, conf enviado por N8N (0.40) es correcto
+    "panoramica-f8":  0.05,  # modelo de bajo confidence en vistas panorámicas
 }
 
 def _run_model(model_key: str, image: Image.Image, conf: float) -> dict:
