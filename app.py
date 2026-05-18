@@ -12,11 +12,17 @@ _model_lock  = threading.Lock()
 _model_cache: dict = {}   # { model_key: YOLO }
 
 MODEL_FILES = {
+    # ── Mangas estándar (5 hilos) ────────────────────────────────────────────
     "manga":           "MANGA_SELLADA.pt",
     "etiquetas":       "ETIQUETAS_FO_INGRESO.pt",
     "etiqueta-tapa":   "ETIQUETA_TAPA_MANGA.pt",
     "ubicacion-manga": "UBICACION_MANGA.pt",
     "panoramica-f8":   "PANORAMICA_FIGURA_8.pt",
+    # ── Mangas de 2 hilos ───────────────────────────────────────────────────
+    "manga-2h":           "2H_MANGA_SELLADA.pt",
+    "etiqueta-tapa-2h":   "2H_ETIQUETA_TAPA_MANGA.pt",
+    "ubicacion-manga-2h": "2H_UBICACION_MANGA.pt",
+    "panoramica-f8-2h":   "2H_PANORAMICA_FIGURA_8.pt",
 }
 
 def _get_model(model_key: str) -> YOLO:
@@ -125,6 +131,71 @@ def validate_panoramica_f8(detections: list) -> dict:
     }
 
 
+# ── Validadores específicos para mangas de 2 hilos ───────────────────────────
+
+def validate_manga_2h(detections: list) -> dict:
+    """Foto 1 — Manga 2 hilos correctamente sellada."""
+    names = {d["class_name"] for d in detections}
+    manga_ok      = "manga_completa"      in names
+    sellado_ok    = "sellado_correcto"    in names
+    sin_sellado   = "sellado_incorrecto"  in names
+    amarra_ok     = "amarra"              in names
+    sin_amarras   = "sin_amarras"         in names
+    aprobado = manga_ok and sellado_ok and not sin_sellado
+    return {
+        "manga_presente":     manga_ok,
+        "sellado_correcto":   sellado_ok,
+        "sellado_incorrecto": sin_sellado,
+        "amarras_presentes":  amarra_ok,
+        "sin_amarras":        sin_amarras,
+        "aprobado":           aprobado,
+    }
+
+
+def validate_etiqueta_tapa_2h(detections: list) -> dict:
+    """Foto 3 — Etiqueta en tapa exterior de manga 2 hilos."""
+    names = {d["class_name"] for d in detections}
+    etiqueta_ok = "etiqueta" in names or len(detections) > 0
+    manga_ok    = "manga_2hilos" in names
+    return {
+        "etiqueta_presente": etiqueta_ok,
+        "manga_presente":    manga_ok,
+        "aprobado":          etiqueta_ok,
+    }
+
+
+def validate_ubicacion_manga_2h(detections: list) -> dict:
+    """Foto 4 — Manga 2 hilos instalada en poste o mensajero."""
+    names = {d["class_name"] for d in detections}
+    manga_ok      = "manga"                in names
+    poste_ok      = "poste"                in names
+    ub_correcta   = "ubicacion_correcta"   in names
+    ub_incorrecta = "ubicacion_incorrecta" in names
+    aprobado = manga_ok and (poste_ok or ub_correcta) and not ub_incorrecta
+    return {
+        "manga_presente":       manga_ok,
+        "poste_presente":       poste_ok,
+        "ubicacion_correcta":   ub_correcta,
+        "ubicacion_incorrecta": ub_incorrecta,
+        "aprobado":             aprobado,
+    }
+
+
+def validate_panoramica_f8_2h(detections: list) -> dict:
+    """Foto 5 — Panorámica figura 8 manga 2 hilos."""
+    names = {d["class_name"] for d in detections}
+    figura8_ok    = "figura8" in names or "✅ Figura 8 correcta" in names
+    manga_ok      = "manga"   in names
+    figura8_wrong = "❌ Figura 8 incorrecta" in names
+    aprobado = (figura8_ok or manga_ok) and not figura8_wrong
+    return {
+        "manga_presente":     manga_ok,
+        "figura8_presente":   figura8_ok,
+        "figura8_incorrecta": figura8_wrong,
+        "aprobado":           aprobado,
+    }
+
+
 @app.get("/health")
 def health():
     base = os.path.dirname(__file__)
@@ -174,9 +245,14 @@ def _run_model(model_key: str, image: Image.Image, conf: float) -> dict:
             })
     validation = (
         validate_manga(detections)              if model_key == "manga"
-        else validate_etiqueta_tapa(detections) if model_key == "etiqueta-tapa"
-        else validate_ubicacion_manga(detections) if model_key == "ubicacion-manga"
-        else validate_panoramica_f8(detections) if model_key == "panoramica-f8"
+        else validate_manga_2h(detections)          if model_key == "manga-2h"
+        else validate_etiquetas(detections)         if model_key == "etiquetas"
+        else validate_etiqueta_tapa(detections)     if model_key == "etiqueta-tapa"
+        else validate_etiqueta_tapa_2h(detections)  if model_key == "etiqueta-tapa-2h"
+        else validate_ubicacion_manga(detections)   if model_key == "ubicacion-manga"
+        else validate_ubicacion_manga_2h(detections) if model_key == "ubicacion-manga-2h"
+        else validate_panoramica_f8(detections)     if model_key == "panoramica-f8"
+        else validate_panoramica_f8_2h(detections)  if model_key == "panoramica-f8-2h"
         else validate_etiquetas(detections)
     )
     return {
