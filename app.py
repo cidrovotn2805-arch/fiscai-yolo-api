@@ -259,14 +259,15 @@ def validate_ubicacion_manga(detections: list) -> dict:
 
 
 def validate_panoramica_f8(detections: list) -> dict:
-    """Foto 5 — Panorámica figura 8. Siempre aprobada (foto documental).
+    """Foto 5 — Panorámica figura 8. Rechaza si no detecta FIGURA_8.
     Modelo v2: clases FIGURA_8(0) y MANGA(1).
     """
     names = {d["class_name"] for d in detections}
+    figura8_ok = "FIGURA_8" in names
     return {
-        "figura8_presente": "FIGURA_8" in names,
-        "manga_presente":   "MANGA"    in names,
-        "aprobado":         True,
+        "figura8_presente": figura8_ok,
+        "manga_presente":   "MANGA" in names,
+        "aprobado":         figura8_ok,
     }
 
 
@@ -322,16 +323,13 @@ def validate_panoramica_f8_2h(detections: list) -> dict:
         "manga_presente":     manga_ok,
         "figura8_presente":   figura8_ok,
         "figura8_incorrecta": figura8_wrong,
-        "aprobado":           (figura8_ok or manga_ok) and not figura8_wrong,
+        "aprobado":           figura8_ok and not figura8_wrong,
     }
 
 
 # ── Motor de inferencia ───────────────────────────────────────────────────────
 
-MODEL_MAX_CONF = {
-    "panoramica-f8":    0.05,
-    "panoramica-f8-2h": 0.05,
-}
+MODEL_MAX_CONF = {}
 
 VALIDATORS = {
     "manga":              validate_manga,
