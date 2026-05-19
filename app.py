@@ -290,7 +290,7 @@ def validate_manga_2h(detections: list) -> dict:
 
 def validate_etiqueta_tapa_2h(detections: list) -> dict:
     names = {d["class_name"] for d in detections}
-    etiqueta_ok = "etiqueta" in names or len(detections) > 0
+    etiqueta_ok = "etiqueta" in names
     manga_ok    = "manga_2hilos" in names
     return {
         "etiqueta_presente": etiqueta_ok,
