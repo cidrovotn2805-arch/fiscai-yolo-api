@@ -1,0 +1,7123 @@
+{
+  "total": 1197,
+  "abreviaturas": [
+    "14V1",
+    "15S",
+    "17J",
+    "18S",
+    "20F",
+    "24M",
+    "26S",
+    "27D1",
+    "28O",
+    "28S",
+    "29B1",
+    "29J",
+    "3JU",
+    "41M1",
+    "7OC1",
+    "7OC2",
+    "9OC",
+    "ABDC",
+    "ABG1",
+    "ABREVIATURA",
+    "ABREVIATURAS",
+    "ACUE",
+    "ADA",
+    "ADG",
+    "ADI1",
+    "ADUR1",
+    "ADV",
+    "AGA1",
+    "AGM",
+    "AJV",
+    "ALA",
+    "ALB1",
+    "ALB2",
+    "ALB3",
+    "ALC1",
+    "ALD",
+    "ALL1",
+    "ALM",
+    "ALO",
+    "ALP",
+    "ALPA",
+    "ALPI",
+    "ALSH",
+    "ALV",
+    "AMA",
+    "AMAL",
+    "AMAM",
+    "AMAX",
+    "AMB",
+    "AMCH",
+    "AME1",
+    "AME2",
+    "AMUN",
+    "ANC",
+    "ANC1",
+    "ANG",
+    "ANST",
+    "APU",
+    "ARB",
+    "ARCH",
+    "ARCP",
+    "ARE",
+    "ARE2",
+    "ARI",
+    "ARJN",
+    "ARM",
+    "ARQN",
+    "ART1",
+    "ASA",
+    "ATA",
+    "ATA1",
+    "ATAM",
+    "ATHA",
+    "ATIA",
+    "ATPS",
+    "ATU",
+    "AUR1",
+    "AURA",
+    "AURC",
+    "AURO",
+    "AURS",
+    "AUSA",
+    "AYAC",
+    "AZA",
+    "AZU",
+    "BABA",
+    "BAE",
+    "BAH",
+    "BAL",
+    "BAN",
+    "BAN1",
+    "BANC",
+    "BAQ",
+    "BAR",
+    "BAS1",
+    "BAS2",
+    "BAT",
+    "BAT1",
+    "BAT2",
+    "BAT3",
+    "BBE1",
+    "BBH1",
+    "BBH2",
+    "BBH3",
+    "BBIN",
+    "BBLI",
+    "BBNS",
+    "BBQ",
+    "BCE",
+    "BCOS",
+    "BCUE",
+    "BDA",
+    "BDRA",
+    "BEA1",
+    "BEC",
+    "BEL1",
+    "BELB",
+    "BEN",
+    "BFE1",
+    "BFE2",
+    "BFE3",
+    "BIB",
+    "BIJ",
+    "BLM",
+    "BLN",
+    "BLS",
+    "BLX",
+    "BLZ1",
+    "BLZ2",
+    "BMAR",
+    "BMDR",
+    "BMN",
+    "BNPA",
+    "BOD",
+    "BOL",
+    "BOL1",
+    "BOM",
+    "BOS",
+    "BOY1",
+    "BPIC",
+    "BPRO",
+    "BQVD",
+    "BRA1",
+    "BRAH1",
+    "BRB",
+    "BRGY",
+    "BRI1",
+    "BRIR",
+    "BROC",
+    "BRT",
+    "BSC1",
+    "BSPB",
+    "BTAM",
+    "BUI",
+    "BUI1",
+    "BUR",
+    "BUR2",
+    "BVPL",
+    "BYAS",
+    "BYCA",
+    "CAC",
+    "CAE1",
+    "CAHU",
+    "CALI",
+    "CAM",
+    "CAN",
+    "CANI",
+    "CAP",
+    "CAR",
+    "CAST",
+    "CAT",
+    "CAY",
+    "CAZ1",
+    "CBE",
+    "CBLA",
+    "CBN",
+    "CBNT",
+    "CBOS",
+    "CBRA",
+    "CBYA",
+    "CCAB",
+    "CCAL",
+    "CCAR",
+    "CCCC",
+    "CCGP",
+    "CCHF",
+    "CCI",
+    "CCKP",
+    "CCLP",
+    "CCMP",
+    "CCNA",
+    "CCO1",
+    "CCQBP",
+    "CCRC",
+    "CCT",
+    "CCVA",
+    "CCVP",
+    "CCVV",
+    "CDD",
+    "CDR",
+    "CDRA",
+    "CDRC",
+    "CDRS",
+    "CDSA",
+    "CDVJ",
+    "CEB",
+    "CEI1",
+    "CEN",
+    "CENT1",
+    "CER",
+    "CESP",
+    "CEV",
+    "CEXP",
+    "CHA",
+    "CHA2",
+    "CHAR",
+    "CHB",
+    "CHBO",
+    "CHC",
+    "CHD",
+    "CHG",
+    "CHI",
+    "CHIG",
+    "CHIP",
+    "CHIQ",
+    "CHIR",
+    "CHJA",
+    "CHLG",
+    "CHM",
+    "CHNE",
+    "CHNT",
+    "CHO",
+    "CHO1",
+    "CHOF",
+    "CHP",
+    "CHRS",
+    "CHTA",
+    "CHUA",
+    "CHUN",
+    "CHUR",
+    "CIA",
+    "CIND",
+    "CIP",
+    "CISN",
+    "CIU1",
+    "CJA1",
+    "CJB",
+    "CJMS",
+    "CJO1",
+    "CL11",
+    "CL3",
+    "CL4",
+    "CLA",
+    "CLB",
+    "CLC",
+    "CLD",
+    "CLH",
+    "CLK",
+    "CLM",
+    "CLMA",
+    "CLN",
+    "CLNO",
+    "CLNS",
+    "CLOC",
+    "CLPI",
+    "CLR",
+    "CLT",
+    "CMBE",
+    "CMD1",
+    "CMEX",
+    "CMIL",
+    "CMOR",
+    "CMUN",
+    "CNAS",
+    "CNC",
+    "CND",
+    "CNIN",
+    "CNOA",
+    "CNOC",
+    "CNR",
+    "CNS",
+    "CNVE",
+    "CNVO",
+    "COC",
+    "COJ",
+    "COL",
+    "COLI",
+    "COLO",
+    "CON",
+    "COR",
+    "COR1",
+    "COT",
+    "COTC",
+    "CPAJ",
+    "CPB",
+    "CPL",
+    "CPLA",
+    "CPLE",
+    "CPML",
+    "CPQ",
+    "CPTC",
+    "CPUC",
+    "CQRI",
+    "CRCL",
+    "CRI",
+    "CRM",
+    "CRN",
+    "CRO",
+    "CRP",
+    "CRTA",
+    "CSFR",
+    "CSGA",
+    "CSJ",
+    "CSRO",
+    "CST",
+    "CSTA",
+    "CTA",
+    "CTCC",
+    "CTCH",
+    "CTCO",
+    "CTE",
+    "CTEC",
+    "CTM",
+    "CTO1",
+    "CTOT",
+    "CTRI",
+    "CTUH",
+    "CUBE",
+    "CUI",
+    "CUM",
+    "CUN",
+    "CUNI",
+    "CUSB",
+    "CUZ",
+    "CVA",
+    "CVCC",
+    "CVEE",
+    "CVET",
+    "CVNC",
+    "CVRD",
+    "CVTO",
+    "CWT",
+    "CYPE",
+    "DAU",
+    "DAU2",
+    "DAY",
+    "DC",
+    "DCCTO",
+    "DCGYE",
+    "DES",
+    "DGER",
+    "DIA",
+    "DIV1",
+    "DLG",
+    "DOR",
+    "DOR1",
+    "DORD",
+    "DPOR",
+    "DPRI",
+    "DPU",
+    "DRDC",
+    "DUR2",
+    "EAMB",
+    "ECH",
+    "ECHE",
+    "ECIS",
+    "ECRQ",
+    "ECUE",
+    "EJCC",
+    "EJI",
+    "ELOA",
+    "EMP1",
+    "EMP2",
+    "EMPNE",
+    "EMT1",
+    "ENC",
+    "END",
+    "ENGA",
+    "ENT",
+    "ENT1",
+    "ENTG",
+    "EPCC",
+    "EPO",
+    "EPTN",
+    "ERIO",
+    "ERM",
+    "ERSR",
+    "ESA1",
+    "ESA2",
+    "ESC1",
+    "ESM",
+    "ESP",
+    "ESP1",
+    "ESPO",
+    "EST1",
+    "EUC",
+    "EUCC",
+    "EVAL",
+    "FAB1",
+    "FAE",
+    "FAT",
+    "FCDR",
+    "FIT1",
+    "FL1",
+    "FLA",
+    "FLO",
+    "FLO1",
+    "FLO2",
+    "FOR",
+    "FRR",
+    "FUMI",
+    "GAR1",
+    "GAS",
+    "GBB",
+    "GBS",
+    "GDA",
+    "GES1",
+    "GFRF",
+    "GHIL",
+    "GIR",
+    "GIR1",
+    "GLCO",
+    "GLD",
+    "GLEL",
+    "GLQ",
+    "GMN",
+    "GMT",
+    "GNJO",
+    "GNLL",
+    "GNO",
+    "GOM1",
+    "GON",
+    "GOS",
+    "GPZR",
+    "GRAY",
+    "GRC",
+    "GRD",
+    "GRE",
+    "GSGA",
+    "GSUR1",
+    "GTRO",
+    "GUA",
+    "GUA1",
+    "GUAN",
+    "GUT",
+    "GUZ",
+    "GYM",
+    "HAZO",
+    "HBLO",
+    "HLCH",
+    "HMG",
+    "HNS",
+    "HOS1",
+    "HPJ",
+    "HUAC",
+    "HUAQ",
+    "HUCH",
+    "HUOF",
+    "IAYO",
+    "IBA",
+    "IBM",
+    "ICTZ",
+    "ICTZ2",
+    "IES",
+    "IESS",
+    "ILL",
+    "ILM",
+    "IMP",
+    "IMTG",
+    "ING",
+    "INM1",
+    "INST",
+    "ISA1",
+    "ISAM",
+    "ITU",
+    "IZA",
+    "JAM",
+    "JAR",
+    "JAR1",
+    "JARP",
+    "JBL",
+    "JDS",
+    "JIP",
+    "JLYL",
+    "JMAR",
+    "JMBR",
+    "JMRN",
+    "JOC",
+    "JOY1",
+    "JUA1",
+    "JUJ",
+    "JULA",
+    "JUN",
+    "JVDE",
+    "KEN",
+    "KEN1",
+    "KEN2",
+    "KM17",
+    "KM18",
+    "KM27",
+    "KPI",
+    "LAB",
+    "LABM",
+    "LAG",
+    "LAG2",
+    "LALM",
+    "LALT",
+    "LAMR",
+    "LAS",
+    "LAT",
+    "LBJS",
+    "LBK",
+    "LBLV",
+    "LBNT",
+    "LBQ",
+    "LBTD",
+    "LBZA",
+    "LCAT",
+    "LCOR",
+    "LCRO",
+    "LCTS",
+    "LDES",
+    "LDN",
+    "LDU",
+    "LECC",
+    "LESM",
+    "LET1",
+    "LGT",
+    "LIB",
+    "LIBNE",
+    "LICT",
+    "LIM",
+    "LISL",
+    "LITA",
+    "LJAS",
+    "LLE1",
+    "LMCC",
+    "LMCD",
+    "LMCO",
+    "LMDS",
+    "LMS",
+    "LMVS",
+    "LNV",
+    "LNVD",
+    "LNVS",
+    "LOCO",
+    "LOG",
+    "LOJ1",
+    "LPDR",
+    "LPM",
+    "LPNA",
+    "LPTA",
+    "LPYA",
+    "LQDA",
+    "LRNA",
+    "LRT",
+    "LRTA",
+    "LSLE",
+    "LTAG",
+    "LTBI",
+    "LTLA",
+    "LTN",
+    "LTRC",
+    "LUC",
+    "LUD",
+    "LUI1",
+    "LUM",
+    "LUN",
+    "LUNQ",
+    "LUZ1",
+    "LUZ2",
+    "LVTO",
+    "LVTR",
+    "MAC",
+    "MAL1",
+    "MALT",
+    "MAN",
+    "MAP4",
+    "MAP5",
+    "MAP6",
+    "MAR1",
+    "MAUX",
+    "MCBL",
+    "MCH3",
+    "MCHA",
+    "MCHE",
+    "MCRA",
+    "MCS",
+    "MCS1",
+    "MDEI",
+    "MDZ",
+    "MDZA",
+    "MER",
+    "MERA",
+    "MEY",
+    "MGLA",
+    "MIL",
+    "MIL2",
+    "MIL3",
+    "MIN",
+    "MIR1",
+    "MIRA",
+    "MLC",
+    "MLDO",
+    "MLGI",
+    "MLGS",
+    "MLIM",
+    "MLL",
+    "MLN",
+    "MLT1",
+    "MMAR",
+    "MMN",
+    "MNA",
+    "MNT",
+    "MNY",
+    "MOC",
+    "MOL",
+    "MON",
+    "MON1",
+    "MONT",
+    "MOR",
+    "MORA",
+    "MPZA",
+    "MRA",
+    "MRC",
+    "MRCC",
+    "MRD",
+    "MRIO",
+    "MRN",
+    "MRS",
+    "MSI1",
+    "MSN",
+    "MSOL",
+    "MTEP",
+    "MTP",
+    "MTUR",
+    "MTV",
+    "MTVO",
+    "MTVQ",
+    "MTZ",
+    "MUC1",
+    "MUR",
+    "MUT",
+    "NAMA",
+    "NBCL",
+    "NBON",
+    "NFCA",
+    "NGAL",
+    "NGDA",
+    "NGRA",
+    "NIA",
+    "NID",
+    "NISR",
+    "NJTO",
+    "NLTO",
+    "NMA",
+    "NOB",
+    "NOG",
+    "NONO",
+    "NPCC",
+    "NPR1",
+    "NRCY",
+    "NRJ",
+    "NRO",
+    "NRPB",
+    "NTN",
+    "NTNM",
+    "NUNU",
+    "NZC",
+    "OBL",
+    "OLM",
+    "OLMI",
+    "OLMM",
+    "OLOG",
+    "ONA",
+    "ONIN",
+    "ORE",
+    "ORE1",
+    "ORI",
+    "ORQ",
+    "ORQ1",
+    "OSMT",
+    "OTA",
+    "PAI",
+    "PAJ",
+    "PAL",
+    "PAM",
+    "PAN",
+    "PAN1",
+    "PANO",
+    "PAR",
+    "PAR1",
+    "PAR2",
+    "PAS1",
+    "PAS2",
+    "PAT",
+    "PAT1",
+    "PAU",
+    "PBLV",
+    "PBNC",
+    "PBTA",
+    "PCA",
+    "PCBO",
+    "PCBO2",
+    "PCEN",
+    "PCHA",
+    "PCNR",
+    "PCRA",
+    "PCSA",
+    "PCTL",
+    "PCTO",
+    "PCY",
+    "PCYO",
+    "PDCC",
+    "PDER",
+    "PDL",
+    "PECP",
+    "PED",
+    "PEL",
+    "PERQ",
+    "PET",
+    "PET1",
+    "PFO1",
+    "PHO1",
+    "PIC",
+    "PIDC",
+    "PIDY",
+    "PIF",
+    "PIL",
+    "PIM",
+    "PIN",
+    "PINC",
+    "PIND",
+    "PIRC",
+    "PIÑ1",
+    "PIÑ2",
+    "PJL",
+    "PLA",
+    "PLA2",
+    "PLA3",
+    "PLDA",
+    "PLGO",
+    "PLHU",
+    "PLI1",
+    "PLMN",
+    "PLQ",
+    "PLQE",
+    "PLR",
+    "PLT",
+    "PLYA",
+    "PLYB",
+    "PMB",
+    "PMB1",
+    "PMCC",
+    "PMLS",
+    "PNIN",
+    "PNIP",
+    "PNL",
+    "PNN",
+    "PNVO",
+    "PNVQ",
+    "POL1",
+    "POM",
+    "PON",
+    "POR1",
+    "PPCC",
+    "PQNE",
+    "PQS",
+    "PRA1",
+    "PRCH",
+    "PRD7",
+    "PRDO",
+    "PREV",
+    "PRI",
+    "PRI1",
+    "PRI2",
+    "PRO",
+    "PRO1",
+    "PROP",
+    "PRS",
+    "PRU",
+    "PSA",
+    "PSB",
+    "PSCC",
+    "PSDA",
+    "PSDU",
+    "PSFR",
+    "PSH",
+    "PSHL",
+    "PSJ",
+    "PSJ2",
+    "PSJE",
+    "PSMC",
+    "PSMI",
+    "PSNJ",
+    "PSO1",
+    "PSPL",
+    "PSQU",
+    "PSRI",
+    "PSVD",
+    "PTCH",
+    "PTE",
+    "PTG",
+    "PTL",
+    "PTN",
+    "PTRC",
+    "PTRO",
+    "PUG1",
+    "PUIO",
+    "PUY",
+    "PVCC",
+    "PVJ",
+    "PVJ1",
+    "PVL1",
+    "PVL2",
+    "PVM",
+    "PVO",
+    "PVO1",
+    "PVON",
+    "PYC1",
+    "PYCU",
+    "PZAS",
+    "PZIN",
+    "PZJY",
+    "PZLA",
+    "PZMC",
+    "QCHE",
+    "QEO",
+    "QLGA",
+    "QMI",
+    "QMX",
+    "QNCC",
+    "QNCH",
+    "QNS",
+    "QRG",
+    "QSCC",
+    "QSLM",
+    "QSP",
+    "QTB",
+    "QUI",
+    "QVD",
+    "RAC",
+    "RAD",
+    "RBEC",
+    "RC6D",
+    "RCON",
+    "RCR",
+    "RCTC",
+    "RDOR",
+    "REC",
+    "REC1",
+    "RENT",
+    "REV",
+    "RFT",
+    "RICQ",
+    "RIN1",
+    "RIO",
+    "RIV",
+    "RLD",
+    "RMUY",
+    "ROLY",
+    "ROS",
+    "RSA",
+    "RUI",
+    "RUMI",
+    "RVRD",
+    "RYL",
+    "RZPL",
+    "S50",
+    "SAAR",
+    "SAI1",
+    "SAL",
+    "SALF",
+    "SALJ",
+    "SAM6",
+    "SAN1",
+    "SAND",
+    "SANT",
+    "SAPL",
+    "SAQ",
+    "SAR",
+    "SATI",
+    "SAU2",
+    "SAU4",
+    "SAU6",
+    "SAUS",
+    "SAY",
+    "SBAH",
+    "SBBR",
+    "SBG",
+    "SBL",
+    "SBR",
+    "SBTR",
+    "SCA",
+    "SCA1",
+    "SCA2",
+    "SCD",
+    "SCHA",
+    "SCHB",
+    "SCHO",
+    "SCL",
+    "SCMT",
+    "SCR",
+    "SCRL",
+    "SCRU",
+    "SCT",
+    "SCTB",
+    "SCTM",
+    "SCU",
+    "SDRO",
+    "SET1",
+    "SFER",
+    "SFLP",
+    "SFM",
+    "SFRA",
+    "SFRC",
+    "SGD",
+    "SGRA",
+    "SHEL",
+    "SHR",
+    "SHU",
+    "SIG",
+    "SISB",
+    "SISD",
+    "SJ1",
+    "SJB",
+    "SJC",
+    "SJMI",
+    "SJN",
+    "SJNQ",
+    "SJQ",
+    "SJQN",
+    "SJSE",
+    "SJTB",
+    "SLCC",
+    "SLN1",
+    "SLN2",
+    "SLR",
+    "SLS",
+    "SLT",
+    "SLU",
+    "SLUC",
+    "SLZE",
+    "SLZS",
+    "SMAN",
+    "SMAT",
+    "SMB",
+    "SMB1",
+    "SMIG",
+    "SMN",
+    "SMRA",
+    "SMSC",
+    "SMTA",
+    "SMTCC",
+    "SMTG",
+    "SMTO",
+    "SMXL",
+    "SNI",
+    "SNI.",
+    "SOL",
+    "SPAR",
+    "SPAT",
+    "SPB",
+    "SPBL",
+    "SPBO",
+    "SPDC",
+    "SPDL",
+    "SPLA",
+    "SPVO",
+    "SRA2",
+    "SRZM",
+    "SSBA",
+    "SSEBA",
+    "SSTO",
+    "STA",
+    "STAC",
+    "STE",
+    "STM",
+    "STM1",
+    "STO",
+    "STR",
+    "STRM",
+    "STRS",
+    "SU2",
+    "SUE1",
+    "SUR1",
+    "SUS",
+    "SVCN",
+    "SVCN2",
+    "SVCT",
+    "SVNS",
+    "SWH",
+    "SYGA",
+    "SZO",
+    "SZRA",
+    "T11",
+    "TAB",
+    "TAC",
+    "TAM",
+    "TAN",
+    "TBC",
+    "TBGA",
+    "TBO",
+    "TBOR",
+    "TBZ",
+    "TCHG",
+    "TDAL",
+    "TDAY",
+    "TEN",
+    "TENS",
+    "TGL",
+    "TLOJ",
+    "TLP",
+    "TMBO",
+    "TMNT",
+    "TND",
+    "TOL",
+    "TON",
+    "TOS",
+    "TPAS",
+    "TPYG",
+    "TQTB",
+    "TR2",
+    "TRAC",
+    "TRBA",
+    "TRC2",
+    "TRCH",
+    "TRE1",
+    "TRFA",
+    "TRI",
+    "TRI1",
+    "TRI2",
+    "TRJ",
+    "TRLL",
+    "TRPA",
+    "TRQ",
+    "TSHA",
+    "TSLO",
+    "TTG1(A)",
+    "TTG1(B)",
+    "TTLO",
+    "TTM",
+    "TTMA",
+    "TTS",
+    "TUB1",
+    "TUL",
+    "TUN1",
+    "TUR",
+    "TURI",
+    "TVBM",
+    "TWZA",
+    "ULM",
+    "UNCC",
+    "UNG",
+    "UNI",
+    "UNIM",
+    "UNIT",
+    "UNL",
+    "URB",
+    "URB1",
+    "URC",
+    "URD1",
+    "URD2",
+    "URDA",
+    "URNA",
+    "UWE",
+    "UYU",
+    "VAHE",
+    "VAL",
+    "VALL",
+    "VALT",
+    "VAQ",
+    "VCCC",
+    "VCH",
+    "VCH1",
+    "VCHO",
+    "VDOL",
+    "VEN",
+    "VER1",
+    "VER2",
+    "VESM",
+    "VFAT",
+    "VFLR",
+    "VFTM",
+    "VGA1",
+    "VGEP",
+    "VGL",
+    "VIL",
+    "VIN1",
+    "VIN2",
+    "VINR",
+    "VLC",
+    "VLEZ",
+    "VLG",
+    "VLLA",
+    "VLNC",
+    "VLTD",
+    "VNS",
+    "VNT",
+    "VNZ",
+    "VQVD",
+    "VREA",
+    "VTRA",
+    "VTRM",
+    "VTRQ",
+    "VUIO",
+    "WMP",
+    "WTC",
+    "XIMA",
+    "YAG",
+    "YCBI",
+    "YCLL",
+    "YGNA",
+    "YMNA",
+    "YRQ",
+    "YZA",
+    "ZAB",
+    "ZAM",
+    "ZAP1",
+    "ZAR",
+    "ZAR1",
+    "ZAR2",
+    "ZBA",
+    "ZHUD",
+    "ZNAC",
+    "ZPA",
+    "ZPO",
+    "ZPTL",
+    "ZPTO",
+    "ZUM",
+    "ZUMB"
+  ],
+  "nodos": [
+    {
+      "nombre": "Alborada 1 (E)",
+      "abreviatura": "ALB1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Alborada 3 (E)",
+      "abreviatura": "ALB3",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Americas 2 (E)",
+      "abreviatura": "AME2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Atarazana 1 (E)",
+      "abreviatura": "ATA1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Bodega kennedy1 (A)",
+      "abreviatura": "KEN1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Ciudad Colon 1 (E)",
+      "abreviatura": "CCO1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Emtelsur 1 (E)",
+      "abreviatura": "EMT1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Guayacanes 1 (E)",
+      "abreviatura": "GUA1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Kennedy 2 (E)",
+      "abreviatura": "KEN2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "NODO ALBORADA 2 (NUEVO)",
+      "abreviatura": "ALB2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Sauces 2 (E)",
+      "abreviatura": "SAU2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Sauces 4 (E)",
+      "abreviatura": "SAU4",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Sauces 6 (E)",
+      "abreviatura": "SAU6",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Americas 1 (E) (NUEVO)",
+      "abreviatura": "AME1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Terminal T Gye CCM A (CC)",
+      "abreviatura": "TTG1(A)",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Terminal T Gye CCM B (CC)",
+      "abreviatura": "TTG1(B)",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "AURORA",
+      "abreviatura": "ABREVIATURA",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Aurora 1 (A) OLD",
+      "abreviatura": "AUR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Abel Gilbert 1 (E)",
+      "abreviatura": "ABG1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Primavera 2 (E)",
+      "abreviatura": "PRI2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Divino Nino 1 (E)",
+      "abreviatura": "DIV1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "FIT 1 (E)",
+      "abreviatura": "FIT1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Recreo 1 (E)",
+      "abreviatura": "REC1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "NODO ENTRERIOS",
+      "abreviatura": "ENT1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Panorama 1 (E)",
+      "abreviatura": "PAN1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "NODO PRIMAVERA 1",
+      "abreviatura": "PRI1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Samborondon Km. 4.5 Rinconcito 1 (E)",
+      "abreviatura": "RIN1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Duran 2 (E)",
+      "abreviatura": "DUR2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "El Buijo 1",
+      "abreviatura": "BUI1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Nodo La Lojas (E)",
+      "abreviatura": "LOJ1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "El Dorado Duran 1 (E)",
+      "abreviatura": "DOR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "La Joya 1 (E)",
+      "abreviatura": "JOY1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Latamfiberhome 1(E)",
+      "abreviatura": "FAB1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Brisas de Procarsa",
+      "abreviatura": "BRI1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Los Tubos",
+      "abreviatura": "TUB1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Santa Martha 1 (E)",
+      "abreviatura": "STM1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "ALMAX CENTER (CC)",
+      "abreviatura": "ALC1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Inmaconsa",
+      "abreviatura": "ABREVIATURA",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Km 17 (E)",
+      "abreviatura": "KM17",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Km 27 (E)",
+      "abreviatura": "KM27",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Bastion 1 (E)",
+      "abreviatura": "BAS1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Bastion 2 (Km 10.5) (E)",
+      "abreviatura": "BAS2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Beata Molina Bloque B-3 1 (E)",
+      "abreviatura": "BEA1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Brahma 1 (E)",
+      "abreviatura": "BRAH1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "El trebol 1 (E)",
+      "abreviatura": "TRE1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Florida 1 (E)",
+      "abreviatura": "FLO1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Florida 2 (E)",
+      "abreviatura": "FLO2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Inmaconsa 1 (A)",
+      "abreviatura": "INM1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Juan Montalvo 1 (E)",
+      "abreviatura": "JUA1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "km 18 (E)",
+      "abreviatura": "KM18",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Mapasingue 4 (E)",
+      "abreviatura": "MAP4",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Mi lote 1(E)",
+      "abreviatura": "MLT1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Montebello 1 (E)",
+      "abreviatura": "MON1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Mucho Lote 1 (E)",
+      "abreviatura": "MUC1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "NODO CIUDAD DEL RIO 1",
+      "abreviatura": "CIU1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "NODO EL TREBOL",
+      "abreviatura": "TRE1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Orellana 1 (E)",
+      "abreviatura": "ORE1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Orquideas 1 (E)",
+      "abreviatura": "ORQ1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Paraiso de la flor 1 (E)",
+      "abreviatura": "PAR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Paraiso de la flor 2",
+      "abreviatura": "PAR2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Pascuales 1 (E)",
+      "abreviatura": "PAS1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Pascuales 2 (E)",
+      "abreviatura": "PAS2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Petrillo 1 (E)",
+      "abreviatura": "PET1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Prosperina 1 (E)",
+      "abreviatura": "PRO1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Samanes 6 (E)",
+      "abreviatura": "SAM6",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Vachagnon 1 (E)",
+      "abreviatura": "VCH1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Vergeles 1 (E)",
+      "abreviatura": "VER1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Vergeles 2 (E)",
+      "abreviatura": "VER2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Monte Sinaí",
+      "abreviatura": "MSI1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Nueva Prosperina",
+      "abreviatura": "NPR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Sergio Toral",
+      "abreviatura": "SET1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Jardines de la Esperanza 1 (E)",
+      "abreviatura": "JAR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "PYCCA 1 (E)",
+      "abreviatura": "PYC1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Cerro Jordan (NE)",
+      "abreviatura": "CJO1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "MIRAFLORES",
+      "abreviatura": "ABREVIATURA",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Bellavista Gepon 1 (E)",
+      "abreviatura": "BEL1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Ceibos 1 (E)",
+      "abreviatura": "CEI1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Chongon 1 (E)",
+      "abreviatura": "CHO1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Data Center (GYE)",
+      "abreviatura": "DCGYE",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Girasoles 1 (E)",
+      "abreviatura": "GIR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Mapasingue 5 (E)",
+      "abreviatura": "MAP5",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Mapasingue 6 (E)",
+      "abreviatura": "MAP6",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Martha de Roldos 1 (E)",
+      "abreviatura": "MAR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Miraflores 1 (A)",
+      "abreviatura": "MIR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Nueva Esperanza 1 (E)",
+      "abreviatura": "ESP1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Portete de Tarqui 1 (E)",
+      "abreviatura": "POR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Puerta del Sol 1 (E)",
+      "abreviatura": "PSO1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Puerto Hondo 1 (E)",
+      "abreviatura": "PHO1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Urbanor 1 (E)",
+      "abreviatura": "URB1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Barcelona Sporting Club (CE)",
+      "abreviatura": "BSC1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Urdesa 1 (E)",
+      "abreviatura": "URD1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Urdesa 2 (E)",
+      "abreviatura": "URD2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Telepuerto Guayaquil (A)",
+      "abreviatura": "TLP",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Data Center Telco City (GYE)",
+      "abreviatura": "DCCTO",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Cerro Azul (NE)",
+      "abreviatura": "CAZ1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Subestacion Electrica TN 1",
+      "abreviatura": "SUE1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "CENTRO",
+      "abreviatura": "ABREVIATURA",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "41 y Mexico 1 (E)",
+      "abreviatura": "41M1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Allcomp 1 (E)",
+      "abreviatura": "ALL1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Boyaca 1 (E)",
+      "abreviatura": "BOY1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Garcia Aviles 1 (E)",
+      "abreviatura": "GAR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Luis Urdaneta y Machala 1 (E)",
+      "abreviatura": "LUI1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Luz del Guayas 1 (E)",
+      "abreviatura": "LUZ1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Luz del Guayas 2 (E)",
+      "abreviatura": "LUZ2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Parque Forestal 1 (E)",
+      "abreviatura": "PFO1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Pedro M y Brasil 1 (E)",
+      "abreviatura": "PMB1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Polideportivo Huancavilca1 (E)",
+      "abreviatura": "POL1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Tungurahua y Clemente Ballen 1 (E)",
+      "abreviatura": "TUN1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Alcedo y Aciclo Garay 1 (E)",
+      "abreviatura": "AGA1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Brasil 1 (E)",
+      "abreviatura": "BRA1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Centro 1 (A)",
+      "abreviatura": "CENT1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Cordova 1 (E)",
+      "abreviatura": "COR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Gomez R y Manuel D 1 (E)",
+      "abreviatura": "GOM1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Puerto Liza 1 (E)",
+      "abreviatura": "PLI1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Bolivariana 1 (E)",
+      "abreviatura": "BOL1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "San FRancisco 300",
+      "abreviatura": "SAN1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "SUR",
+      "abreviatura": "ABREVIATURA",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "27 diagonal y Transversal 1 (E)",
+      "abreviatura": "27D1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Alcedo y Agusto Dillon 1 (E)",
+      "abreviatura": "ADI1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Avda 14 y Venezuela 1 (E)",
+      "abreviatura": "14V1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Beatriz Bejar 1 (E)",
+      "abreviatura": "BBE1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Col Bellas Artes 1 (E)",
+      "abreviatura": "ART1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Colegio Jose Llerena 1 (E)",
+      "abreviatura": "LLE1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Esclusas 1 (E)",
+      "abreviatura": "ESC1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "CAE 1 (E)",
+      "abreviatura": "CAE1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Estero Salado 1 (E)",
+      "abreviatura": "ESA1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Estero Salado 2 (E)",
+      "abreviatura": "ESA2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Esteros 1 (E)",
+      "abreviatura": "EST1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Floresta 1 (E)",
+      "abreviatura": "FL1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Guasmo Este 1 (E)",
+      "abreviatura": "GES1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Guasmo Sur 1 (E)",
+      "abreviatura": "GSUR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Hospital Guayaquil 1 (E)",
+      "abreviatura": "HOS1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "La 14 y Maldonado 1 (E)",
+      "abreviatura": "MAL1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "La 29 y Bolivia 1 (E)",
+      "abreviatura": "29B1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "La Saiba 1 (E)",
+      "abreviatura": "SAI1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Letamendi 1 (E)",
+      "abreviatura": "LET1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Batallon 1 (E)",
+      "abreviatura": "BAT1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Batallon 2 (E)",
+      "abreviatura": "BAT2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Batallon 3 (E)",
+      "abreviatura": "BAT3",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Vacas Galindo 1 (E)",
+      "abreviatura": "VGA1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Pradera 1 (E)",
+      "abreviatura": "PRA1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Trinitaria 1 (E)",
+      "abreviatura": "TRI1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Trinitaria 2 (E)",
+      "abreviatura": "TRI2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Sur 1 (A)",
+      "abreviatura": "SUR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Unión de Bananeros 1 (E)",
+      "abreviatura": "BAN1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Bodega GYE/Campamento (E)",
+      "abreviatura": "CTO1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Edificio Cajamarca CTO (CE)",
+      "abreviatura": "CJA1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Edificio Comedor CTO (CE)",
+      "abreviatura": "CMD1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "DURAN",
+      "abreviatura": "ABREVIATURAS",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Agregador Durán (A)",
+      "abreviatura": "ADUR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Abel Gilbert 1 (E)",
+      "abreviatura": "ABG1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Primavera 2 (E)",
+      "abreviatura": "PRI2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Divino Nino 1 (E)",
+      "abreviatura": "DIV1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Recreo 1 (E)",
+      "abreviatura": "REC1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Panorama 1 (E)",
+      "abreviatura": "PAN1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Primavera 1 (E)",
+      "abreviatura": "PRI1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Duran 2 (E)",
+      "abreviatura": "DUR2",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "El Dorado Duran 1 (E)",
+      "abreviatura": "DOR1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Latamfiberhome 1(E)",
+      "abreviatura": "FAB1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Brisas de Procarsa",
+      "abreviatura": "BRI1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "Los Tubos",
+      "abreviatura": "TUB1",
+      "ciudad": "GYE"
+    },
+    {
+      "nombre": "15 de Septiembre (E)",
+      "abreviatura": "15S",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "17 de Julio (E) los bancos",
+      "abreviatura": "17J",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "20 de Febrero (E)",
+      "abreviatura": "20F",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "24 de Mayo (E)",
+      "abreviatura": "24M",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "26 de Septiembre (E)",
+      "abreviatura": "26S",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "28 de Octubre (E)",
+      "abreviatura": "28O",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "28 de Septiembre (E)",
+      "abreviatura": "28S",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "29 de Junio (E) pedro vicente",
+      "abreviatura": "29J",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "3 de Julio (E)",
+      "abreviatura": "3JU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "7 de Octubre 1 (NE)",
+      "abreviatura": "7OC1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "7 de Octubre 2 (E)",
+      "abreviatura": "7OC2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "9 de Octubre (E)",
+      "abreviatura": "9OC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Abdon Calderon  (E)",
+      "abreviatura": "ABDC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Abel Gilbert (E)",
+      "abreviatura": "ABG1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Adavid (E)",
+      "abreviatura": "ADA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Aeropuerto Cuenca (NE)",
+      "abreviatura": "ACUE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Agregador Machala (A)",
+      "abreviatura": "AMCH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Alamor (E)",
+      "abreviatura": "ALM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Alausi SDH (I)",
+      "abreviatura": "ALA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Alhambra Shopping (CC)",
+      "abreviatura": "ALSH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Almax II (CC)",
+      "abreviatura": "AMAX",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Aloag (E)",
+      "abreviatura": "ALO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Alluriquin (E)",
+      "abreviatura": "ARQN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Alpachaca (E)",
+      "abreviatura": "ALP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Alpachaca Iba (E)",
+      "abreviatura": "ALPI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Altar Urco (NE)",
+      "abreviatura": "AURC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Alvarez (E)",
+      "abreviatura": "ALV",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Amable Maria (E)",
+      "abreviatura": "AMAM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Amaluza ( E)",
+      "abreviatura": "AMAL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Amazonas (E)",
+      "abreviatura": "AMA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ambato SDH (I)",
+      "abreviatura": "AMB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ancon (E)",
+      "abreviatura": "ANC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Anconcito 1 (E)",
+      "abreviatura": "ANC1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Andres de Vera (E)",
+      "abreviatura": "ADV",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Angamarquillo (E)",
+      "abreviatura": "AGM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Anibal San Andres (E)",
+      "abreviatura": "ASA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Antonio Sotomayor (E)",
+      "abreviatura": "ANST",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Arajuno (E)",
+      "abreviatura": "ARJN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Arbolito (E)",
+      "abreviatura": "ARB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Archidona (E)",
+      "abreviatura": "ARCH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Arcos Plaza (CC)",
+      "abreviatura": "ARCP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Arenillas 2 (NE)",
+      "abreviatura": "ARE2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Arizaga (E)",
+      "abreviatura": "ARI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Asistencia Municipal (E)",
+      "abreviatura": "AMUN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Apuela (E)",
+      "abreviatura": "APU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Atacames (E)",
+      "abreviatura": "ATA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Atahualpa (E)",
+      "abreviatura": "ALPA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Atahualpa Amb (E)",
+      "abreviatura": "ATHA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Atahualpa mch (E)",
+      "abreviatura": "ATAM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Atahualpa sln (E)",
+      "abreviatura": "ATPS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Atis Ambato (SDH)",
+      "abreviatura": "ATIA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Atuntaqui (A)",
+      "abreviatura": "ATU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Aurora (A)",
+      "abreviatura": "AUR1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Aurora (E)",
+      "abreviatura": "AURS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Aurora Onnet (NE)",
+      "abreviatura": "AURO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ayacucho (E)",
+      "abreviatura": "AYAC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Azaya (E)",
+      "abreviatura": "AZA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Baba (E)",
+      "abreviatura": "BABA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Babahoyo 1 (O)",
+      "abreviatura": "BBH1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Babahoyo 2 (NE)",
+      "abreviatura": "BBH2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Babahoyo 3 (E)",
+      "abreviatura": "BBH3",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Baeza SDH (I)",
+      "abreviatura": "BAE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bahia de Caraquez  (E)",
+      "abreviatura": "BAH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Balao 2 (E)",
+      "abreviatura": "BAL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Balsapamba (E)",
+      "abreviatura": "BSPB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Balsas (O)",
+      "abreviatura": "BLS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Balzar 1 (O)",
+      "abreviatura": "BLZ1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Balzar 2 (NE)",
+      "abreviatura": "BLZ2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Banco del Austro Arenal  (NE)",
+      "abreviatura": "AUSA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Banco Pichincha cue (CE)",
+      "abreviatura": "BPIC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Baños (E)",
+      "abreviatura": "BAN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Baños cue (NE)",
+      "abreviatura": "BANC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Barbones",
+      "abreviatura": "BBNS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Barbasquillo 1 (E) Migrando",
+      "abreviatura": "BBQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Barreiro (E)",
+      "abreviatura": "BRIR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Barrio C (E)",
+      "abreviatura": "BROC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Barrio Centenario (E)",
+      "abreviatura": "CEN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bayas (E)",
+      "abreviatura": "BYAS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cabinanet (E)",
+      "abreviatura": "CBN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bartolo (E)",
+      "abreviatura": "BRT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Belen (E)",
+      "abreviatura": "BLN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Belisario Quevedo (E)",
+      "abreviatura": "BQVD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bellavista Baja (E)",
+      "abreviatura": "BELB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bellavista Cuenca  (A)",
+      "abreviatura": "BCUE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bellavista mnt (E)",
+      "abreviatura": "BTAM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Biblian (NE)",
+      "abreviatura": "BIB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bibin (E)",
+      "abreviatura": "BBIN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bijahual (NE)",
+      "abreviatura": "BIJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bodega amb (E)",
+      "abreviatura": "BDA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bolivar  SDH (I)",
+      "abreviatura": "BOL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bomberos (E)",
+      "abreviatura": "BOM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bomboli (CC)",
+      "abreviatura": "BBLI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Borbon (E)",
+      "abreviatura": "BRB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Boyaca (NP)",
+      "abreviatura": "BYCA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bramaderos (NP)",
+      "abreviatura": "BMDR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bramadora (E)",
+      "abreviatura": "BDRA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Brisas de procarsa (E)",
+      "abreviatura": "BPRO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Brisas del Mar (E)",
+      "abreviatura": "BMAR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Buena Fe 1 (NE)",
+      "abreviatura": "BFE1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Buena Fe 2 (E)",
+      "abreviatura": "BFE2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Buena Fe 3 (E)",
+      "abreviatura": "BFE3",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Buen Pastor (E)",
+      "abreviatura": "BNPA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Buena Vista Plaza (CC)",
+      "abreviatura": "BVPL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bueran 1 (NE)",
+      "abreviatura": "BUR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Bueran 2 (NE)",
+      "abreviatura": "BUR2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Burgay (E)",
+      "abreviatura": "BRGY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cachaulo  (NE)",
+      "abreviatura": "CAC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cajabamba (E)",
+      "abreviatura": "CJB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Calceta (E)",
+      "abreviatura": "CTA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Calderon 1 (E)",
+      "abreviatura": "CDRS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Calderon cue (E)",
+      "abreviatura": "CDRC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Caliente (E)",
+      "abreviatura": "CALI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Calpi (E)",
+      "abreviatura": "CLPI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Caluma (NE)",
+      "abreviatura": "CLMA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Caluma (E)",
+      "abreviatura": "CLM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Calvario Nuevo (E)",
+      "abreviatura": "CNVO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Camara de Industrias 1 (NE)",
+      "abreviatura": "CIND",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cantón Cevallos (E)",
+      "abreviatura": "CVA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cañar  (NE)",
+      "abreviatura": "CNR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Capaes 1 (NE)",
+      "abreviatura": "CAP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Caracol (E )",
+      "abreviatura": "CRCL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Carpuela (E)",
+      "abreviatura": "CPL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cariamanga (E)",
+      "abreviatura": "CRM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Carolina 1 (I)",
+      "abreviatura": "CAR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Carolina cue (E )",
+      "abreviatura": "CRO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Casa Bonita (E)",
+      "abreviatura": "CBNT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Casa de la Moneda BCE (CE)",
+      "abreviatura": "BCE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Casanga (E)",
+      "abreviatura": "CSGA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Caschca Totoras (NE)",
+      "abreviatura": "CTOT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Castanier (E)",
+      "abreviatura": "CST",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Castellana (E)",
+      "abreviatura": "CTE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Castelnovo (E)",
+      "abreviatura": "CAST",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Catacocha 2 (E)",
+      "abreviatura": "CTCH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Catamayo (E)",
+      "abreviatura": "CAT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cayambe SDH (I)",
+      "abreviatura": "CAY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Canoa (E)",
+      "abreviatura": "CNOA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cebollar (NE)",
+      "abreviatura": "CEB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Celica loja (E)",
+      "abreviatura": "CLC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Centro cue (E)",
+      "abreviatura": "CNOC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Centro Comercial La Pradera",
+      "abreviatura": "CCLP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Centro de viajes (E)",
+      "abreviatura": "CDVJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerecita (E)",
+      "abreviatura": "CER",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Ahuaca 1 (NE)",
+      "abreviatura": "CAHU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Animas 1 (NE)",
+      "abreviatura": "CANI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Blanco (E)",
+      "abreviatura": "CBLA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Bosco (NE)",
+      "abreviatura": "CBOS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Cabras (NE)",
+      "abreviatura": "CCAB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Cabuya  (NE)",
+      "abreviatura": "CBYA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Calvario (NE)",
+      "abreviatura": "CCVA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Calvario Loja (NE)",
+      "abreviatura": "CCAL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Cananvalle (NE)",
+      "abreviatura": "CAN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Cararango 1 (NE)",
+      "abreviatura": "CCNA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Chuqui (NE)",
+      "abreviatura": "CCAR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro de Hojas  (NE)",
+      "abreviatura": "CHJA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro el Niño (NE)",
+      "abreviatura": "CNIN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Huachahurco (NE)",
+      "abreviatura": "CHUA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro La Esperanza 1 (NE)",
+      "abreviatura": "CESP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro La Mocorita San Placido (E)",
+      "abreviatura": "CPLA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro La Union 1 (NE)",
+      "abreviatura": "CUNI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Morupe (NE)",
+      "abreviatura": "CMOR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Nueve (NE)",
+      "abreviatura": "CNVE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Olon 1 (NE)",
+      "abreviatura": "COLO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Duran Pajan (NE)",
+      "abreviatura": "CPAJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "cerro Patuca (E)",
+      "abreviatura": "CPTC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Pile  (NE)",
+      "abreviatura": "CPLE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Pucara (NE)",
+      "abreviatura": "CPUC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Pumalon (NE)",
+      "abreviatura": "CPML",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Santa Ana 1 (NE)",
+      "abreviatura": "CSTA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Santa Rosa (NE)",
+      "abreviatura": "CSRO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Tahuin (Cerro El Oso) (NE)",
+      "abreviatura": "CTUH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Trigal (NE)",
+      "abreviatura": "CTRI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Ventanas - Teleamazonas 1 (NE)",
+      "abreviatura": "CVET",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Ventanas-Ecuavisa 1 (NE)",
+      "abreviatura": "CVEE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cerro Villonaco (NE)",
+      "abreviatura": "CVNC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cevallos (E)",
+      "abreviatura": "CEV",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chacras (E)",
+      "abreviatura": "CHRS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chaguarpamba (E)",
+      "abreviatura": "CHG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chamanga (E)",
+      "abreviatura": "CHM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chambo (E)",
+      "abreviatura": "CHBO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chanduy (E)",
+      "abreviatura": "CHD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chantaco (E)",
+      "abreviatura": "CTCO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Charapoto (E)",
+      "abreviatura": "CHAR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Charapoto 2 (E)",
+      "abreviatura": "CHA2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chaullabamba (NE)",
+      "abreviatura": "CHB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chillanes (E)",
+      "abreviatura": "CHNE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chiguilpe (NE)",
+      "abreviatura": "CHIG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chimbo (E)",
+      "abreviatura": "CHI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chipipe 1 (E)",
+      "abreviatura": "CHIP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chiriboga (O)",
+      "abreviatura": "CHIR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chiquintad (E )",
+      "abreviatura": "CHIQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chone  Choferes (E)",
+      "abreviatura": "CHOF",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chone Centro (E)",
+      "abreviatura": "CHO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chontaloma (E)",
+      "abreviatura": "CHNT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chontapunta (E)",
+      "abreviatura": "CHTA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chordeleg (E)",
+      "abreviatura": "CHLG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chulluype (E)",
+      "abreviatura": "CYPE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chunchi (E)",
+      "abreviatura": "CHUN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chuquiribamba",
+      "abreviatura": "CQRI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Chuwitayo (E)",
+      "abreviatura": "CWT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ciano Alto  (NE)",
+      "abreviatura": "CIA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cisneros (E)",
+      "abreviatura": "CISN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ciudad Verde (E)",
+      "abreviatura": "CVRD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ciudadela del Chofer (E)",
+      "abreviatura": "CCHF",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ciudadela Municipal (E)",
+      "abreviatura": "CMUN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ciudadela San Francisco (E)",
+      "abreviatura": "CSFR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Coca 1 (E)",
+      "abreviatura": "COC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Codesa (E)",
+      "abreviatura": "CDSA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cojimies (E)",
+      "abreviatura": "CJMS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cojitambo (NE)",
+      "abreviatura": "COJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Colambo (NE)",
+      "abreviatura": "CLB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Colegio Tecnico (E)",
+      "abreviatura": "CTEC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Colimes (NE)",
+      "abreviatura": "COLI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Colinas sln (E)",
+      "abreviatura": "CLNS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Colon Cañar (NE)",
+      "abreviatura": "CLOC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Colon mnt (E)",
+      "abreviatura": "CLN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Paseo Shopping Manta (CC)",
+      "abreviatura": "SMAN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Colonche 1 (E)",
+      "abreviatura": "COL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Colorado (E)",
+      "abreviatura": "CLR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Colonos (E)",
+      "abreviatura": "CLNO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Columbe",
+      "abreviatura": "CBE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Comil (E)",
+      "abreviatura": "CMIL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Concordia 2 (E)",
+      "abreviatura": "CON",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Control Sur (E)",
+      "abreviatura": "CNS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Convento (E )",
+      "abreviatura": "CVTO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cotacachi (E)",
+      "abreviatura": "COTC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cotama (A)",
+      "abreviatura": "CTM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "CRE  (San Camilo) (E)",
+      "abreviatura": "SCA1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cristobal (E)",
+      "abreviatura": "CRI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Crucita (E)",
+      "abreviatura": "CRTA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cube (NP)",
+      "abreviatura": "CUBE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cuicuno (E)",
+      "abreviatura": "CUI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cumanda (E)",
+      "abreviatura": "CUM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cumbaratza (E )",
+      "abreviatura": "CBRA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cumbe (E)",
+      "abreviatura": "CMBE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cunchibamba (E)",
+      "abreviatura": "CUN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Cusubamba (E)",
+      "abreviatura": "CUSB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Dager (E)",
+      "abreviatura": "DGER",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Data Center Gye (A)",
+      "abreviatura": "DCGYE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Data Center uio (A)",
+      "abreviatura": "DC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Daule 1 (E)",
+      "abreviatura": "DAU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Daule 2 (O)",
+      "abreviatura": "DAU2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Dayuma (E)",
+      "abreviatura": "DAY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Decima Primera (E)",
+      "abreviatura": "DPRI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Del  Portal (EDIF)",
+      "abreviatura": "DPOR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Duran 2 (E)",
+      "abreviatura": "DUR2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Echeandia (NE)",
+      "abreviatura": "ECH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Echeandia (E)",
+      "abreviatura": "ECHE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ejido de Caranqui (E)",
+      "abreviatura": "ECRQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Angel (I)",
+      "abreviatura": "ANG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Arenal  (E)",
+      "abreviatura": "ARE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Batan (CC)",
+      "abreviatura": "BAT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Buijo (E)",
+      "abreviatura": "BUI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Cambio 2 (E)",
+      "abreviatura": "CAM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Chaco (E)",
+      "abreviatura": "CHA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Cisne ( E )",
+      "abreviatura": "ECIS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Desquite (E)",
+      "abreviatura": "DES",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Dorado (E)",
+      "abreviatura": "DOR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Dorado de Cascales (NP)",
+      "abreviatura": "DRDC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Dorado Duran (E)",
+      "abreviatura": "DORD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Empalme 1 (E)",
+      "abreviatura": "EMP1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Empalme 1 (NE)",
+      "abreviatura": "EMPNE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Empalme 2 (E)",
+      "abreviatura": "EMP2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Guabo (O)",
+      "abreviatura": "GUA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Libro (E)",
+      "abreviatura": "LIB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Mercurio  (NE)",
+      "abreviatura": "MER",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Pangui (E)",
+      "abreviatura": "PAN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Paseo Shopping Libertad(CC)",
+      "abreviatura": "PSHL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Rosal (E)",
+      "abreviatura": "ROS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Salto (E)",
+      "abreviatura": "SAL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Triunfo 1 (E)",
+      "abreviatura": "TRI1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Triunfo 2 (E)",
+      "abreviatura": "TRI2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Valle (E)",
+      "abreviatura": "VALL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Eloy Alfaro (I)",
+      "abreviatura": "ELOA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Endara (E)",
+      "abreviatura": "END",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Enriquez Gallo (E)",
+      "abreviatura": "ENGA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Entre rios (E)",
+      "abreviatura": "ERIO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Epoca (E)",
+      "abreviatura": "EPO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Esmeraldas (E)",
+      "abreviatura": "ESM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Espejo (E)",
+      "abreviatura": "ESP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Espoch (E)",
+      "abreviatura": "ESPO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Estadio AMB (E)",
+      "abreviatura": "EAMB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Estadio cue (E)",
+      "abreviatura": "ECUE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Estero de platano (E)",
+      "abreviatura": "EPTN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Eucaliptos cue (E)",
+      "abreviatura": "EUCC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Febres Cordero (E)",
+      "abreviatura": "FCDR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "FIT 1 (E)",
+      "abreviatura": "FIT1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Flavio Alfaro  (E)",
+      "abreviatura": "FLA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Florida 4 Machala (E)",
+      "abreviatura": "FLO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Fumisa (NE)",
+      "abreviatura": "FUMI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "General Farfan (E)",
+      "abreviatura": "GFRF",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Giron (NE)",
+      "abreviatura": "GIR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Golondrinas (E)",
+      "abreviatura": "GLD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Gonzalo Pizarro",
+      "abreviatura": "GPZR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Gonzanama 2 (E)",
+      "abreviatura": "GON",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Gracemary (NE)",
+      "abreviatura": "GRC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Granadilla (O)",
+      "abreviatura": "GNLL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Gremio (E)",
+      "abreviatura": "GRE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Guahil (NE)",
+      "abreviatura": "GHIL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Gualaceo (E)",
+      "abreviatura": "GLCO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Gualaquiza  (O)",
+      "abreviatura": "GLQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Gualel",
+      "abreviatura": "GLEL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Gualleturo cue (E)",
+      "abreviatura": "GTRO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Guamote (E)",
+      "abreviatura": "GMT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Guango (NE)",
+      "abreviatura": "GUAN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Guano (E)",
+      "abreviatura": "GNO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Guanujo (E)",
+      "abreviatura": "GNJO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Guaranda (E)",
+      "abreviatura": "GRD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Guaranda SDH (I)",
+      "abreviatura": "GDA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Guasaganda (NE)",
+      "abreviatura": "GSGA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Guayllabamba (E)",
+      "abreviatura": "GBB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Guzho (NE)",
+      "abreviatura": "GUZ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Hipermarket Los Chillos (CC)",
+      "abreviatura": "HLCH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Hipermarket Milagro (CC)",
+      "abreviatura": "HMG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Hypermarket Pasaje (CC)",
+      "abreviatura": "HPJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Hornillos (NE)",
+      "abreviatura": "HNS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Hostal Azogues  (E)",
+      "abreviatura": "HAZO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Huaca (E)",
+      "abreviatura": "HUAC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Huachi (E)",
+      "abreviatura": "HUCH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Huachi nodo y oficina (E)",
+      "abreviatura": "HUOF",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Huambalo (E)",
+      "abreviatura": "HBLO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "HUAQUILLAS",
+      "abreviatura": "HUAQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ibarra SDH (I)",
+      "abreviatura": "IBA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ictocruz 1 (E)",
+      "abreviatura": "ICTZ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ictocruz 2 (NE)",
+      "abreviatura": "ICTZ2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Iluman (E)",
+      "abreviatura": "ILM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Imantag (NP)",
+      "abreviatura": "IMTG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Imperial (E)",
+      "abreviatura": "IMP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Instituto (E)",
+      "abreviatura": "INST",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Isabela 1 (NE)",
+      "abreviatura": "ISA1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Isidro Ayora (E)",
+      "abreviatura": "IAYO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Isidro Ayora mlg (E)",
+      "abreviatura": "ISAM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Isla Española (E)",
+      "abreviatura": "IES",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Izamba (E)",
+      "abreviatura": "IZA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Jama (E)",
+      "abreviatura": "JAM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Jaramijo (E )",
+      "abreviatura": "JAR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Jardines Plaza (CC)",
+      "abreviatura": "JARP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Javier Loyola (E)",
+      "abreviatura": "JLYL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Jesus Maria 1 (NP)",
+      "abreviatura": "JMAR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Jimbura (NP)",
+      "abreviatura": "JMBR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Jipijapa SDH (O)",
+      "abreviatura": "JIP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Jivino Verde (E)",
+      "abreviatura": "JVDE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Jocay  (E)",
+      "abreviatura": "JOC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Joya de los Sachas (E)",
+      "abreviatura": "JDS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Jujan (E)",
+      "abreviatura": "JUJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Julio Andrade (E)",
+      "abreviatura": "JULA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Julio Moreno (E)",
+      "abreviatura": "JMRN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Junin (E)",
+      "abreviatura": "JUN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Kennedy 1 (A)",
+      "abreviatura": "KEN1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Kupi (E)",
+      "abreviatura": "KPI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Aurora mnt (E)",
+      "abreviatura": "AURA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Bonita (E)",
+      "abreviatura": "LBNT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Belleza",
+      "abreviatura": "LBZA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Catorce (E)",
+      "abreviatura": "LCAT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Entrada 1 (I)",
+      "abreviatura": "ENT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Entrada Gepon (E)",
+      "abreviatura": "ENTG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Esmeralda (EDIF)",
+      "abreviatura": "LESM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Joya (E)",
+      "abreviatura": "JOY1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Mana (O)",
+      "abreviatura": "MNA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Merced (E)",
+      "abreviatura": "LMCD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Quadra (CC)",
+      "abreviatura": "LQDA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Piazza Samborondon (CC)",
+      "abreviatura": "PZAS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Playa  (E)",
+      "abreviatura": "LPYA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Pradera mnt (E)",
+      "abreviatura": "LPDR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Puntilla (E)",
+      "abreviatura": "LPTA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Salle (E)",
+      "abreviatura": "LSLE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Tola (E)",
+      "abreviatura": "LTLA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Troncal 1 (NE)",
+      "abreviatura": "LTRC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Troncal 2 (E)",
+      "abreviatura": "TRC2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Union (E)",
+      "abreviatura": "UNI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Union mach (E)",
+      "abreviatura": "UNIM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Union mnt (NP)",
+      "abreviatura": "UNIT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Unión Qvdo (E)",
+      "abreviatura": "LUNQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Victoria (E)",
+      "abreviatura": "LVTR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "La Victoria mach (E)",
+      "abreviatura": "VTRM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Labaka (E)",
+      "abreviatura": "LBK",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lagarto (E)",
+      "abreviatura": "LGT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lago Agrio 2 (E)",
+      "abreviatura": "LAG2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lago Agrio SDH (I)",
+      "abreviatura": "LAG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Las Cañas (E)",
+      "abreviatura": "CNAS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Las Dunas 1 (E)",
+      "abreviatura": "LDN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Las Islas  (NE)",
+      "abreviatura": "LISL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Las Lojas (E)",
+      "abreviatura": "LJAS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Las Maravillas (E)",
+      "abreviatura": "LMVS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Las Mercedes (E)",
+      "abreviatura": "LMDS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Las Naves (NE)",
+      "abreviatura": "LNV",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Las Naves (E)",
+      "abreviatura": "LNVS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Las Palmas (E)",
+      "abreviatura": "LPM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Las Pinas (E)",
+      "abreviatura": "LPNA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Las Tunas (E)",
+      "abreviatura": "LTN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lasso (NE)",
+      "abreviatura": "LAS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Latacunga SDH (I)",
+      "abreviatura": "LAT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Latamfiber (E)",
+      "abreviatura": "LTBI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Laguna Mall (CC)",
+      "abreviatura": "LMCC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lentag",
+      "abreviatura": "LTAG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Locoa (E)",
+      "abreviatura": "LOCO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Libertad  (E)",
+      "abreviatura": "LBTD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Libertad 1 (NE)",
+      "abreviatura": "LIBNE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Libertador Bolívar (E)",
+      "abreviatura": "LBLV",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Licto (E)",
+      "abreviatura": "LICT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Limoncocha",
+      "abreviatura": "LMCO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Limon Indanza (NE)",
+      "abreviatura": "LIM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lita SDH (I)",
+      "abreviatura": "LITA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Logroño  (NE)",
+      "abreviatura": "LOG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Loma Alta (NP)",
+      "abreviatura": "LALT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Loma de Los Vientos (NE)",
+      "abreviatura": "LVTO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lomas de Sargentillo (NE)",
+      "abreviatura": "LMS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lorena (E)",
+      "abreviatura": "LRNA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Loreto (E)",
+      "abreviatura": "LRT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Loreto Ambato (E)",
+      "abreviatura": "LRTA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Los Almendros (E)",
+      "abreviatura": "LALM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Los Bajos (E)",
+      "abreviatura": "LBJS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Los Cactus  (E)",
+      "abreviatura": "LCTS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Los Encuentros (E)",
+      "abreviatura": "ENC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Los Nevados (E)",
+      "abreviatura": "LNVD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lourdes (NE)",
+      "abreviatura": "LDES",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lucero (E)",
+      "abreviatura": "LCRO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Luis Cordero  (E)",
+      "abreviatura": "LCOR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lumbaqui (E)",
+      "abreviatura": "LBQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lumbaqui (NE)",
+      "abreviatura": "LUM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Lundingold (CE)",
+      "abreviatura": "LUN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Luz de America (E)",
+      "abreviatura": "LAMR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Macara 2 (E)",
+      "abreviatura": "MCRA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Macas 1 (NE)",
+      "abreviatura": "MCS1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Macas sdh (O)",
+      "abreviatura": "MCS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Machachi (E)",
+      "abreviatura": "MAC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Machala 3 (E)",
+      "abreviatura": "MCH3",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Malacatos (E)",
+      "abreviatura": "MLC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Malchingui (E)",
+      "abreviatura": "MLGI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Maldonado (E)",
+      "abreviatura": "MLDO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Malimpia",
+      "abreviatura": "MLIM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mall del Alto (CC)",
+      "abreviatura": "MALT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mall del Rio (E)",
+      "abreviatura": "MRIO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mall del Rio (CC)",
+      "abreviatura": "MRCC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mall del Pacifico (CC)",
+      "abreviatura": "CCMP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Malteria Plaza (CC)",
+      "abreviatura": "MTEP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Manglaralto (E)",
+      "abreviatura": "MGLA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Manta SDH (O)",
+      "abreviatura": "MNT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Maras (E)",
+      "abreviatura": "MRS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Marcabeli (E)",
+      "abreviatura": "MCBL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Marcelino Maridueña (E)",
+      "abreviatura": "MMAR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Maria Auxiliadora  (E)",
+      "abreviatura": "MAUX",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mariano Acosta (E)",
+      "abreviatura": "MRA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Martinez (E)",
+      "abreviatura": "MTZ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Materdei 1 (E)",
+      "abreviatura": "MDEI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mendez SDH (O)",
+      "abreviatura": "MDZ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mendoza (E)",
+      "abreviatura": "MDZA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mera (E)",
+      "abreviatura": "MERA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Milagro (O)",
+      "abreviatura": "MIL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Milagro 2 (E)",
+      "abreviatura": "MIL2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Milagro 3 (E)",
+      "abreviatura": "MIL3",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Milagros (E)",
+      "abreviatura": "MLGS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mindo (E)",
+      "abreviatura": "MIN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Miñarica (E)",
+      "abreviatura": "MRC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mira (E)",
+      "abreviatura": "MIRA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mirasol  (NE)",
+      "abreviatura": "MSOL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mocache (NE)",
+      "abreviatura": "MOC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mocache (E)",
+      "abreviatura": "MCHE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mocha (E)",
+      "abreviatura": "MCHA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Molleturo",
+      "abreviatura": "MTUR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Monay (CC)",
+      "abreviatura": "MNY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Montalvo (E)",
+      "abreviatura": "MTVQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Montalvo qvdo (NE)",
+      "abreviatura": "MTVO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Montecristi (E)",
+      "abreviatura": "MONT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Monteverde 1 (E)",
+      "abreviatura": "MTV",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Moraspungo (E)",
+      "abreviatura": "MORA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Motupe (E)",
+      "abreviatura": "MTP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Muey (E)",
+      "abreviatura": "MEY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Muisne (E)",
+      "abreviatura": "MSN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Multiplaza (CC)",
+      "abreviatura": "MPZA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Mutualista (E)",
+      "abreviatura": "MUT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nabon (E)",
+      "abreviatura": "NBON",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nambacola (NP)",
+      "abreviatura": "NBCL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Narancay (E)",
+      "abreviatura": "NRCY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Naranjal 1 (O)",
+      "abreviatura": "NRJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Naranjito (E)",
+      "abreviatura": "NJTO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nero 1 (NE)",
+      "abreviatura": "NRO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Niagara (E)",
+      "abreviatura": "NIA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nid (E)",
+      "abreviatura": "NID",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Niton (NE)",
+      "abreviatura": "NTN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Niton Mintel (NE)",
+      "abreviatura": "NTNM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nobol (NE)",
+      "abreviatura": "NOB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Azucar  (NE)",
+      "abreviatura": "AZU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nodo Jambeli (E)",
+      "abreviatura": "JBL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nodo Olon Gepon (E)",
+      "abreviatura": "OLOG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nodo San Pablo Gepon (E)",
+      "abreviatura": "SPBL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nueva Granada (E)",
+      "abreviatura": "NGRA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nueva Granada Loj (E)",
+      "abreviatura": "NGDA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nueva Republica (E)",
+      "abreviatura": "NRPB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nuevo Amanecer (E)",
+      "abreviatura": "NAMA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nuevo Ficoa (E)",
+      "abreviatura": "NFCA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nuevo Israel (E)",
+      "abreviatura": "NISR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nuevo Mall Andes (E)",
+      "abreviatura": "NMA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ñuñurco (NE)",
+      "abreviatura": "NUNU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Obelisco (E)",
+      "abreviatura": "OBL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Olmedo iba (E)",
+      "abreviatura": "OLMI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Olmedo Loja (E)",
+      "abreviatura": "OLM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Olmedo Manta (E )",
+      "abreviatura": "OLMM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Oña (O)",
+      "abreviatura": "ONA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Orodelti Hda.La niña 1 (NE)",
+      "abreviatura": "ONIN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Orodelti Hda.San Mateo 1 (NE)",
+      "abreviatura": "OSMT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Otavalo (E)",
+      "abreviatura": "OTA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paccha (NE)",
+      "abreviatura": "PCHA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pacto (E)",
+      "abreviatura": "PCTO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pacayacu (E)",
+      "abreviatura": "PYCU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pahuancay (O)",
+      "abreviatura": "PCY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pailon (NE)",
+      "abreviatura": "PAI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pajan (E )",
+      "abreviatura": "PAJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Palanda (E)",
+      "abreviatura": "PLDA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Palenque (E)",
+      "abreviatura": "PLQE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Palenque (NE)",
+      "abreviatura": "PQNE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Palestina (O)",
+      "abreviatura": "PLT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pallatanga (E)",
+      "abreviatura": "PAL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Palora (E)",
+      "abreviatura": "PLR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Palmales (E)",
+      "abreviatura": "PMLS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Panorama (E)",
+      "abreviatura": "PANO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Penipe (E)",
+      "abreviatura": "PNIP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Parada 7 (E)",
+      "abreviatura": "PRD7",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paraiso 1 (E)",
+      "abreviatura": "PRS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Parque Industrial 1 (E)",
+      "abreviatura": "PIDC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Parque Industrial Rio (E)",
+      "abreviatura": "PIND",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Parrales y Guale (E)",
+      "abreviatura": "PAR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paquisha (E)",
+      "abreviatura": "PQS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pasaje (E)",
+      "abreviatura": "PSJE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pasaje 2 (E)",
+      "abreviatura": "PSJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Ambato (CC)",
+      "abreviatura": "PSA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Babahoyo (CC)",
+      "abreviatura": "PSB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Bahia de Carquez (CC)",
+      "abreviatura": "SBAH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Daule  (CC)",
+      "abreviatura": "PSDA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Duran (CC)",
+      "abreviatura": "PSDU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Machala (CC)",
+      "abreviatura": "PSMC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Milagro (CC)",
+      "abreviatura": "PSMI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Naranjal (CC)",
+      "abreviatura": "PSNJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Playas (CC)",
+      "abreviatura": "PSPL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Portoviejo (CC)",
+      "abreviatura": "SPVO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Quevedo 1 (CC)",
+      "abreviatura": "PSQU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Riobamba (CC)",
+      "abreviatura": "PSRI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Sto Doming (CC)",
+      "abreviatura": "SSTO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paseo Shopping Via Daule (CC)",
+      "abreviatura": "PSVD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pasohurco (NE)",
+      "abreviatura": "PSH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Patate (E)",
+      "abreviatura": "PTE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Patococha 1 (NE)",
+      "abreviatura": "PTCH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Patricia Pilar (NE)",
+      "abreviatura": "PAT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Patricia Pilar 1 (O)",
+      "abreviatura": "PAT1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Paute (E)",
+      "abreviatura": "PAU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pedernales SDH (O)",
+      "abreviatura": "PED",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pedro Carbo 1 (E)",
+      "abreviatura": "PCBO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pedro Carbo 2 (O)",
+      "abreviatura": "PCBO2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pedro Vicente sto (E)",
+      "abreviatura": "PVM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pelileo (E)",
+      "abreviatura": "PEL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Perucho (E)",
+      "abreviatura": "PRU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Petrillo (E)",
+      "abreviatura": "PET",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Petrocomercial  (CE)",
+      "abreviatura": "PTRO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Piady (E)",
+      "abreviatura": "PIDY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Piazza La Joya (CC)",
+      "abreviatura": "PZJY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Piazza Machala (CC)",
+      "abreviatura": "PZMC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pichincha (O)",
+      "abreviatura": "PIC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Picoaza (E)",
+      "abreviatura": "PCA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pilanqui (E)",
+      "abreviatura": "PLQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pilahuin (E)",
+      "abreviatura": "PLHU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pillaro (E)",
+      "abreviatura": "PIL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pimampiro (E)",
+      "abreviatura": "PIM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pindal  (E)",
+      "abreviatura": "PDL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Piñas 1 (E)",
+      "abreviatura": "PIÑ1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Piñas 2 (E)",
+      "abreviatura": "PIÑ2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pircas (NE)",
+      "abreviatura": "PIRC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Playas 1 Radio  (NE)",
+      "abreviatura": "PLA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Playas 2 (A)",
+      "abreviatura": "PLA2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Playas 3 (E)",
+      "abreviatura": "PLA3",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Playas Arenal (E)",
+      "abreviatura": "PLYA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Playas Bellavista (E)",
+      "abreviatura": "PLYB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Plaza Batan (CC)",
+      "abreviatura": "PBTA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Plaza Lagos 1 (cc)",
+      "abreviatura": "PLGO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Plaza Norte Loja (CC)",
+      "abreviatura": "PNL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Plaza Tia Central (CC)",
+      "abreviatura": "PCEN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ponce Enriquez (E)",
+      "abreviatura": "PERQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Porton (E)",
+      "abreviatura": "PTN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Portovelo 1 (E)",
+      "abreviatura": "PVL1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Portovelo 2 (E)",
+      "abreviatura": "PVL2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Portoviejo  (O)",
+      "abreviatura": "PVO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Portoviejo 1 (O)",
+      "abreviatura": "PVO1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Portoviejo Norte  (E)",
+      "abreviatura": "PVON",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Portoviejo Zona Industrial  (E)",
+      "abreviatura": "PZIN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Posorja 2 (E)",
+      "abreviatura": "PSJ2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pradera (E)",
+      "abreviatura": "PDER",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Prado (E)",
+      "abreviatura": "PRDO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Primavera 1 (E)",
+      "abreviatura": "PRI1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Primavera 2 (E)",
+      "abreviatura": "PRI2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Princesa (E)",
+      "abreviatura": "PCSA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Progreso (O)",
+      "abreviatura": "PRO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Propicia (E)",
+      "abreviatura": "PROP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pucara Santa Isabel (E)",
+      "abreviatura": "PCRA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pueblo Nuevo 1 (E)",
+      "abreviatura": "PNVO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pueblo nuevo qvdo (E)",
+      "abreviatura": "PNVQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Puebloviejo (E)",
+      "abreviatura": "PVJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Puebloviejo 1 (NE)",
+      "abreviatura": "PVJ1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Puerto Bolivar (E)",
+      "abreviatura": "PBLV",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Puerto Cayo (E)",
+      "abreviatura": "PCYO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Puerto El Carmen Putumayo (E)",
+      "abreviatura": "PECP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Puerto Inca (E)",
+      "abreviatura": "PINC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Puerto Limon (E)",
+      "abreviatura": "PLMN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Puerto Lopez  (E)",
+      "abreviatura": "PTL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Puerto Quito 1 (E)",
+      "abreviatura": "PUIO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Puerto Rico (E)",
+      "abreviatura": "PTRC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Puglla 1 (NE)",
+      "abreviatura": "PUG1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Pujili (O)",
+      "abreviatura": "PJL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Punta Blanca 1(E)",
+      "abreviatura": "PBNC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Punta Carnero (E)",
+      "abreviatura": "PCNR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Punta Centinela (E)",
+      "abreviatura": "PCTL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Punin (E)",
+      "abreviatura": "PNIN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Putzalahua (NE)",
+      "abreviatura": "PZLA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Puyo SDH (I)",
+      "abreviatura": "PUY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Qmax (E)",
+      "abreviatura": "QMX",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Quero (E)",
+      "abreviatura": "QEO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Quimiag (E)",
+      "abreviatura": "QMI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Quinche (E)",
+      "abreviatura": "QCHE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Quininde (E)",
+      "abreviatura": "QUI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Quinsaloma (NE)",
+      "abreviatura": "QNS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Quinsaloma (E)",
+      "abreviatura": "QSLM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Quiroga (E)",
+      "abreviatura": "QRG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Quisapincha (E)",
+      "abreviatura": "QSP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Quinta Chica (E)",
+      "abreviatura": "QNCH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Racar Plaza (CC)",
+      "abreviatura": "RAC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Rayoloma (E)",
+      "abreviatura": "RYL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Repetidora bellavista del cerro 1 (NE)",
+      "abreviatura": "RBEC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Repetidora Muey (E)",
+      "abreviatura": "RMUY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Reventador SDH (O)",
+      "abreviatura": "REV",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ricaurte cue (E)",
+      "abreviatura": "RCTC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ricaurte qvdo (E)",
+      "abreviatura": "RICQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Rinconcito (E)",
+      "abreviatura": "RCON",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Rio Verde (E)",
+      "abreviatura": "RVRD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Riobamba SDH",
+      "abreviatura": "RIO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Riocentro El Dorado/Hiper (CC)",
+      "abreviatura": "RDOR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Riocentro Entrerios (CC)",
+      "abreviatura": "RENT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Rocafuerte mnt (E)",
+      "abreviatura": "RFT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Rosario (E)",
+      "abreviatura": "RSA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Rumipamba (NP)",
+      "abreviatura": "RUMI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sabana Grande (NE)",
+      "abreviatura": "SBG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Salcedo (E)",
+      "abreviatura": "SCD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Salinas 1 (O)",
+      "abreviatura": "SLN1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Salinas 2  (E)",
+      "abreviatura": "SLN2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Salinas rio (E)",
+      "abreviatura": "SLR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Salitre (E)",
+      "abreviatura": "SLT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Samborondon 1 (NE)",
+      "abreviatura": "SMB1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Samborondon 2 (E)",
+      "abreviatura": "SMN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Alejo (E)",
+      "abreviatura": "SALJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Alfonso (E)",
+      "abreviatura": "SALF",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Andres (E)",
+      "abreviatura": "SAND",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Antonio (E)",
+      "abreviatura": "SANT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Antonio de las Aradas (NE)",
+      "abreviatura": "SAAR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Antonio iba (E)",
+      "abreviatura": "SATI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Buenaventura (E)",
+      "abreviatura": "SBTR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Camilo 2 (E)",
+      "abreviatura": "SCA2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Carlos qvdo (E)",
+      "abreviatura": "SCRL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Clemente (E)",
+      "abreviatura": "SCMT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Cristobal 1 (E) Galapagos",
+      "abreviatura": "SCTB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Cristobal mnt (E)",
+      "abreviatura": "SCTM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Felipe (E )",
+      "abreviatura": "SFLP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Fernando  (E)",
+      "abreviatura": "SFER",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Francisco (E)",
+      "abreviatura": "SFRA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Francisco (NE)",
+      "abreviatura": "SFRC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Gabriel (E)",
+      "abreviatura": "SGRA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Isidro (E)",
+      "abreviatura": "SISD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Isidro/Villamarin (NE)",
+      "abreviatura": "VLLA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Jacinto (E)",
+      "abreviatura": "SJC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Jacinto de Bua (E)",
+      "abreviatura": "SJTB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Joaquin (NE)",
+      "abreviatura": "SJQN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Jose (E)",
+      "abreviatura": "SJSE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Jose de Minas (E)",
+      "abreviatura": "SJMI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Juan (E)",
+      "abreviatura": "SJN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Juan 1 (NE)",
+      "abreviatura": "SJ1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Juan Bosco (E)",
+      "abreviatura": "SJB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Juan qvdo (E)",
+      "abreviatura": "SJNQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Juan qvdo (NE)",
+      "abreviatura": "SJQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Lorenzo (E)",
+      "abreviatura": "SLZE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Lorenzo 1 (E)",
+      "abreviatura": "SLZS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Lorenzo MNT (E)",
+      "abreviatura": "SRZM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Lucas (E )",
+      "abreviatura": "SLUC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Mateo (E)",
+      "abreviatura": "SMAT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "SAN MIGUEL (E)",
+      "abreviatura": "SMIG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Nicolas (E)",
+      "abreviatura": "SNI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Pablo 1 (E)",
+      "abreviatura": "SPB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Pablo (E)",
+      "abreviatura": "SPBO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Pablo de Atenas",
+      "abreviatura": "SPAT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Pablo de las Aradas (E)",
+      "abreviatura": "SPAR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Pedro (E )",
+      "abreviatura": "SPDL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Pedro cue (E)",
+      "abreviatura": "SPDC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Placido  (E)",
+      "abreviatura": "SPLA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Sebastian mnt (E)",
+      "abreviatura": "SSEBA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Sebastian (E)",
+      "abreviatura": "SSBA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Vicente (NE)",
+      "abreviatura": "SVCN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Vicente 2 (E)",
+      "abreviatura": "SVCN2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Vicente mnt (E )",
+      "abreviatura": "SVCT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa Ana (E)",
+      "abreviatura": "STA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa Ana cue (E )",
+      "abreviatura": "STAC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa Barbara (E)",
+      "abreviatura": "SBBR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa Cruz 1(E)",
+      "abreviatura": "SCRU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa Elena 1 (E)",
+      "abreviatura": "STE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa Isabel (O)",
+      "abreviatura": "SISB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa Lucia (E)",
+      "abreviatura": "SLU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa María (E)",
+      "abreviatura": "SMRA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa María de Toachi (E)",
+      "abreviatura": "SMTO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa Martha (E)",
+      "abreviatura": "STM1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa Martha sto (E)",
+      "abreviatura": "SMTA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa Monica  (E)",
+      "abreviatura": "STM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa Rosa (E)",
+      "abreviatura": "STR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa Rosa mach (E)",
+      "abreviatura": "STRM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santa rosa Salinas 1 (E)",
+      "abreviatura": "STRS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santas Vainas (E)",
+      "abreviatura": "SVNS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Santo Domingo SDH (O)",
+      "abreviatura": "STO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Saraguro 2 (E)",
+      "abreviatura": "SRA2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Saraguro (O)",
+      "abreviatura": "SAR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sarayunga (E)",
+      "abreviatura": "SYGA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sauces sln (E)",
+      "abreviatura": "SAUS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Seafman (E)",
+      "abreviatura": "SFM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Shell (E)",
+      "abreviatura": "SHEL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Shuar (E)",
+      "abreviatura": "SHR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Shushufindi (E)",
+      "abreviatura": "SHU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sigchos (E)",
+      "abreviatura": "SCHO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sigsig (E)",
+      "abreviatura": "SIG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Simbalo (NE)",
+      "abreviatura": "SBL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Simiatug",
+      "abreviatura": "SMTG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Simon Bolivar  (E)",
+      "abreviatura": "SMB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sinchaguasin (NE)",
+      "abreviatura": "SCHA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sinincay",
+      "abreviatura": "SNI.",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sinohydro (CE)",
+      "abreviatura": "SDRO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sixto (E)",
+      "abreviatura": "SCHB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sozoranga (E )",
+      "abreviatura": "SZRA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sozoranga (NE)",
+      "abreviatura": "SZO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sucre (E)",
+      "abreviatura": "SCR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sucua (E)",
+      "abreviatura": "SCU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Supermaxi loja (CC)",
+      "abreviatura": "SMXL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Suscal (E)",
+      "abreviatura": "SUS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tabacundo SDH (I)",
+      "abreviatura": "TAB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tabuga",
+      "abreviatura": "TBGA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tachina (nuevo)",
+      "abreviatura": "TAC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Taisha (E)",
+      "abreviatura": "TSHA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tambillo (E)",
+      "abreviatura": "TAM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Tambo Loja (E )",
+      "abreviatura": "TBO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tambo cue (NE)",
+      "abreviatura": "TMBO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tandapi SDH (I)",
+      "abreviatura": "TAN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Taracoa (E)",
+      "abreviatura": "TRAC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tarapoa (E)",
+      "abreviatura": "TRPA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tarifa (E)",
+      "abreviatura": "TRFA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tarqui (E)",
+      "abreviatura": "TRQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Taura (E)",
+      "abreviatura": "TUR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Telepuerto gye (A)",
+      "abreviatura": "TLP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Telepuerto Loja (O)",
+      "abreviatura": "TLOJ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Telepuerto Manta 1 (A)",
+      "abreviatura": "TMNT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Quevedo (A)",
+      "abreviatura": "QVD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tena (E)",
+      "abreviatura": "TEN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tena SDH (Dos Rios) (O)",
+      "abreviatura": "TENS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tendales (E)",
+      "abreviatura": "TDAL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tenguel (NE)",
+      "abreviatura": "TGL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Terminal Rio (E)",
+      "abreviatura": "TRBA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Terminal Terres Machala 1 (CC)",
+      "abreviatura": "TTMA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Terminal Terrestre Loja (NE)",
+      "abreviatura": "TTLO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Terminal Terrestre mnt (CC)",
+      "abreviatura": "TTM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Terminal Terrestre SL 1 (E)",
+      "abreviatura": "TTS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Terraza Pasaje (NE)",
+      "abreviatura": "TPAS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Terminal Puyango (NE)",
+      "abreviatura": "TPYG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "TV CABLE MANTA",
+      "abreviatura": "TVBM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tisaleo (E)",
+      "abreviatura": "TSLO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tiwintza (E)",
+      "abreviatura": "TWZA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tolita SDH (I)",
+      "abreviatura": "TOL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tonchigue (E)",
+      "abreviatura": "TCHG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tonsupa (E)",
+      "abreviatura": "TON",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tosagua 2 (E)",
+      "abreviatura": "TOS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Totoracocha (E)",
+      "abreviatura": "TRCH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Totorillas  (E)",
+      "abreviatura": "TRLL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tulcan SDH (I)",
+      "abreviatura": "TUL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Tundayme (E )",
+      "abreviatura": "TDAY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Turi",
+      "abreviatura": "TRI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Turiscol (E)",
+      "abreviatura": "TURI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Uleam (E)",
+      "abreviatura": "ULM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Unabana-Guingopana (NE)",
+      "abreviatura": "UNG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "UNL (E)",
+      "abreviatura": "UNL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Urbirrios (E)",
+      "abreviatura": "URB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Urcuqui (E)",
+      "abreviatura": "URC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Urdaneta (E)",
+      "abreviatura": "URDA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Urna (NE)",
+      "abreviatura": "URNA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Uwe (E)",
+      "abreviatura": "UWE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Uyumbicho (E)",
+      "abreviatura": "UYU",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Valdivia (San Pedro) (E)",
+      "abreviatura": "VAL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Valencia (NE)",
+      "abreviatura": "VLC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Valencia (E)",
+      "abreviatura": "VLNC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Valladolid (E)",
+      "abreviatura": "VDOL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Valle Alto SDH (I)",
+      "abreviatura": "VALT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Valle Hermoso (E)",
+      "abreviatura": "VAHE",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Velez (E)",
+      "abreviatura": "VLEZ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Venezuela (E)",
+      "abreviatura": "VNZ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ventanas (O)",
+      "abreviatura": "VEN",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ventanas (E)",
+      "abreviatura": "VNT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Venus (E)",
+      "abreviatura": "VNS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Vergel (E)",
+      "abreviatura": "VGL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Via Chone (E)",
+      "abreviatura": "VCHO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Via Esmeraldas (E)",
+      "abreviatura": "VESM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Via Quevedo (E)",
+      "abreviatura": "VQVD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Via Quito (E)",
+      "abreviatura": "VUIO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Via lago agrio (E)",
+      "abreviatura": "VLG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Via Tarqui (E)",
+      "abreviatura": "VTRQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Vilcabamba (E)",
+      "abreviatura": "VIL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Viche (E)",
+      "abreviatura": "VCH",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Villaflor (E)",
+      "abreviatura": "VFLR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Village Plaza (CC)",
+      "abreviatura": "VGEP",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Villareal (E)",
+      "abreviatura": "VREA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Vinces 1 (A)",
+      "abreviatura": "VIN1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Vinces 2 (E)",
+      "abreviatura": "VIN2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Vinces Radio (NE)",
+      "abreviatura": "VINR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Virgen de Fatima (O)",
+      "abreviatura": "VFAT",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Virgen de Fatima Generador(O)",
+      "abreviatura": "VFTM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Voluntad (E)",
+      "abreviatura": "VLTD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Xima (EDIF)",
+      "abreviatura": "XIMA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Yacucalle (E)",
+      "abreviatura": "YCLL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Yacuambi (E)",
+      "abreviatura": "YCBI",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Yaguachi (E)",
+      "abreviatura": "YAG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Yamana (E)",
+      "abreviatura": "YMNA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Yantzaza SDH (A)",
+      "abreviatura": "YZA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Yangana (E)",
+      "abreviatura": "YGNA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zamora SDH (I)",
+      "abreviatura": "ZAM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zapallo (E)",
+      "abreviatura": "ZPA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zapallo (NE)",
+      "abreviatura": "ZPO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zapotal (NP)",
+      "abreviatura": "ZPTL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zapotillo (E)",
+      "abreviatura": "ZPTO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zapotillo 1(NE) Migrando",
+      "abreviatura": "ZAP1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zaruma 1 (NE)",
+      "abreviatura": "ZAR1",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zaruma 2 (E)",
+      "abreviatura": "ZAR2",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zhud (O)",
+      "abreviatura": "ZHUD",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zunac (E)",
+      "abreviatura": "ZNAC",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zumba (E)",
+      "abreviatura": "ZUMB",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zumbahua (O)",
+      "abreviatura": "ZBA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Zumbi (E)",
+      "abreviatura": "ZUM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nanegalito (O)",
+      "abreviatura": "NLTO",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Nanegal",
+      "abreviatura": "NGAL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Los Bancos (O)",
+      "abreviatura": "BCOS",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Quilanga (E)",
+      "abreviatura": "QLGA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Saquisili (E)",
+      "abreviatura": "SAQ",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Barreiro (E )",
+      "abreviatura": "BAR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Sayausi (E)",
+      "abreviatura": "SAY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Valle Cue (E)",
+      "abreviatura": "EVAL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "DELEG",
+      "abreviatura": "DLG",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Ventura (E)",
+      "abreviatura": "VTRA",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Rosario (E)",
+      "abreviatura": "ERSR",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "El Rosario mil (E)",
+      "abreviatura": "ERM",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "Garay (E)",
+      "abreviatura": "GRAY",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "San Antonio (NP)",
+      "abreviatura": "SAPL",
+      "ciudad": "TS"
+    },
+    {
+      "nombre": "18 de Septiembre (E)",
+      "abreviatura": "18S",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Ajavi (E)",
+      "abreviatura": "AJV",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Aloag (E)",
+      "abreviatura": "ALO",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Alondras (E)",
+      "abreviatura": "ALD",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Alpahuasi (E)",
+      "abreviatura": "ALP",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Andagoya (E)",
+      "abreviatura": "ADG",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Armenia (A)",
+      "abreviatura": "ARM",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Atahualpa (CC)",
+      "abreviatura": "ATA",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Baquedano (E)",
+      "abreviatura": "BAQ",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Barrio Ecuador (E)",
+      "abreviatura": "BEC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Belmonte (E)",
+      "abreviatura": "BLM",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Benitez (E)",
+      "abreviatura": "BEN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Biloxi (A)",
+      "abreviatura": "BLX",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Bodega (E)",
+      "abreviatura": "BOD",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Bolivar (E)",
+      "abreviatura": "BOL",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Borromoni (A)",
+      "abreviatura": "BMN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Calderon (E)",
+      "abreviatura": "CDR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Calderon Alto",
+      "abreviatura": "CDRA",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Calle 11 (E)",
+      "abreviatura": "CL11",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Calle 3 (E)",
+      "abreviatura": "CL3",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Calle 4 (E)",
+      "abreviatura": "CL4",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Calle A (E)",
+      "abreviatura": "CLA",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Calle B (E)",
+      "abreviatura": "CLB",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Calle D (E)",
+      "abreviatura": "CLD",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Calle H (E)",
+      "abreviatura": "CLH",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Calle K (E)",
+      "abreviatura": "CLK",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Canada (E)",
+      "abreviatura": "CAN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Carapungo (E)",
+      "abreviatura": "CRP",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Cardenas (E)",
+      "abreviatura": "CAR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Casa de la Moneda BCE (CE)",
+      "abreviatura": "BCE",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "CC El Bosque (CC)",
+      "abreviatura": "BOS",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "CC El Condado (CC)",
+      "abreviatura": "CDD",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "CC El Recreo (CC)",
+      "abreviatura": "CCRC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "CCI (CC)",
+      "abreviatura": "CCI",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Cemexpo (NE)",
+      "abreviatura": "CMEX",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Centro Exposiciones uio (CE)",
+      "abreviatura": "CEXP",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Chaupitena (E)",
+      "abreviatura": "CHP",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Checa (E)",
+      "abreviatura": "CHC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Chiche (E)",
+      "abreviatura": "CHI",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Chillogallo (E)",
+      "abreviatura": "CHG",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Chiriyacu (E)",
+      "abreviatura": "CHIR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Chura (E)",
+      "abreviatura": "CHUR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Cipreses (E)",
+      "abreviatura": "CIP",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Cochapamba (E)",
+      "abreviatura": "CPB",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Cocotog (E)",
+      "abreviatura": "CCT",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Colector (E)",
+      "abreviatura": "CLT",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Colinas (E)",
+      "abreviatura": "CLN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Colon (E)",
+      "abreviatura": "COL",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Complejo Quito (E)",
+      "abreviatura": "CPQ",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Concorde (E)",
+      "abreviatura": "CNC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Condor (E)",
+      "abreviatura": "CND",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Consejo (NE)",
+      "abreviatura": "CSJ",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Coral Carapungo (CC)",
+      "abreviatura": "CCCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Coral Tumbaco (CC)",
+      "abreviatura": "CTCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Coral Villaflora (CC)",
+      "abreviatura": "CVCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Cordova (E)",
+      "abreviatura": "COR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Cotocollao (E)",
+      "abreviatura": "COT",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Cuzubamba",
+      "abreviatura": "CUZ",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Data Center uio (A)",
+      "abreviatura": "DC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "DC Cirion (NE)",
+      "abreviatura": "CRN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Diaz (E)",
+      "abreviatura": "DIA",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Dos Puentes (E)",
+      "abreviatura": "DPU",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Ejido (E)",
+      "abreviatura": "EJI",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "El Jardin (CC)",
+      "abreviatura": "EJCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "El Portal (CC)",
+      "abreviatura": "EPCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Endara (E)",
+      "abreviatura": "END",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Eucaliptos (E)",
+      "abreviatura": "EUC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "FAE (CE)",
+      "abreviatura": "FAE",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Fatima (E)",
+      "abreviatura": "FAT",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Ferrero (E)",
+      "abreviatura": "FRR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Florida (E)",
+      "abreviatura": "FLO",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Fortines (E)",
+      "abreviatura": "FOR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Gaspar (E)",
+      "abreviatura": "GAS",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Gosseal (A)",
+      "abreviatura": "GOS",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Guabos (E)",
+      "abreviatura": "GBS",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Guachan (E)",
+      "abreviatura": "GUA",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Gualleturo (E)",
+      "abreviatura": "GUT",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Guamani (E)",
+      "abreviatura": "GMN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Guayasamin (E)",
+      "abreviatura": "GYM",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Guayllabamba (E)",
+      "abreviatura": "GBB",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Hipermarket Los Chillos (CC)",
+      "abreviatura": "HLCH",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "IBM (CE)",
+      "abreviatura": "IBM",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Iess Riesgos (CE)",
+      "abreviatura": "IESS",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Illingworth (E)",
+      "abreviatura": "ILL",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Inglaterra (E)",
+      "abreviatura": "ING",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Isla Espanola (E)",
+      "abreviatura": "IES",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Iturralde (E)",
+      "abreviatura": "ITU",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Kennedy (E)",
+      "abreviatura": "KEN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "La Esquina (CC)",
+      "abreviatura": "LECC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Labrador (E)",
+      "abreviatura": "LAB",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Labuio (PRUEBA)",
+      "abreviatura": "LABM",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "LDU (CE)",
+      "abreviatura": "LDU",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Lucha de los pobres (E)",
+      "abreviatura": "LUC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Ludena (E)",
+      "abreviatura": "LUD",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Lumbisi (E)",
+      "abreviatura": "LUM",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Machachi (E)",
+      "abreviatura": "MAC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Mandarina (E)",
+      "abreviatura": "MAN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Mitad del Mundo (E)",
+      "abreviatura": "MMN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Molina (E)",
+      "abreviatura": "MOL",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Montalvo (E)",
+      "abreviatura": "MON",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Morales (E)",
+      "abreviatura": "MOR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Moran (E)",
+      "abreviatura": "MRN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Morlan (E)",
+      "abreviatura": "MLN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Muller (E)",
+      "abreviatura": "MLL",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Murialdo (E)",
+      "abreviatura": "MRD",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Muros (A)",
+      "abreviatura": "MUR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Nazacota (E)",
+      "abreviatura": "NZC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Neapolis (CC)",
+      "abreviatura": "NPCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Nogales (E)",
+      "abreviatura": "NOG",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Nono (E)",
+      "abreviatura": "NONO",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Orellana (E)",
+      "abreviatura": "ORE",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Oriental (E)",
+      "abreviatura": "ORI",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Orquideas (E)",
+      "abreviatura": "ORQ",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Palacios (E)",
+      "abreviatura": "PAL",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Pampa (E)",
+      "abreviatura": "PAM",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Pananorte (E)",
+      "abreviatura": "PNN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Panecillo (RE)",
+      "abreviatura": "PAN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Paris (E)",
+      "abreviatura": "PAR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Parque Industrial (E)",
+      "abreviatura": "PIN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Paseo San Francisco (CC)",
+      "abreviatura": "PSFR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Pifo (E)",
+      "abreviatura": "PIF",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Pintag (E)",
+      "abreviatura": "PTG",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Plaza de Toros (E)",
+      "abreviatura": "PLT",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Plaza del Rancho (CC)",
+      "abreviatura": "PRCH",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Plaza Doral (CC)",
+      "abreviatura": "PDCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Plaza Marquesina (CC)",
+      "abreviatura": "PMCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Plaza Villaflora (CC)",
+      "abreviatura": "PVCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Pomasqui (E)",
+      "abreviatura": "POM",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Pomasqui Plaza (CC)",
+      "abreviatura": "PPCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Ponce (E)",
+      "abreviatura": "PON",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Previsora (EDIF)",
+      "abreviatura": "PREV",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Principe (E)",
+      "abreviatura": "PRI",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Puembo (E)",
+      "abreviatura": "PMB",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Puruha Shopping (CC)",
+      "abreviatura": "PSCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Quicentro Norte (CC)",
+      "abreviatura": "QNCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Quicentro Sur (CC)",
+      "abreviatura": "QSCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Quiroz (E)",
+      "abreviatura": "QUI",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Quito Bowling Plaza (CC)",
+      "abreviatura": "CCQBP",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Quitumbe (E)",
+      "abreviatura": "QTB",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Real Audiencia (E)",
+      "abreviatura": "RAD",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Recoleta (E)",
+      "abreviatura": "REC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Recreo (E)",
+      "abreviatura": "RCR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Renazzo Plaza (EDIF)",
+      "abreviatura": "RZPL",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Repetidor Olaya",
+      "abreviatura": "ROLY",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Riocentro 6 de Diciembre (CC)",
+      "abreviatura": "RC6D",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Rivera (E)",
+      "abreviatura": "RIV",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Roldos (E)",
+      "abreviatura": "RLD",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Ruiz (E)",
+      "abreviatura": "RUI",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Rumipamba (NP)",
+      "abreviatura": "RUMI",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "S50 (E)",
+      "abreviatura": "S50",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Salazar (E)",
+      "abreviatura": "SAL",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Salgado (E)",
+      "abreviatura": "SGD",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "San Bartolo (E)",
+      "abreviatura": "SBR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "San Carlos (E)",
+      "abreviatura": "SCL",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "San Juan de Calderon (E)",
+      "abreviatura": "SJC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "San Juan de Conocoto (E)",
+      "abreviatura": "SJN",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "San Luis (CC)",
+      "abreviatura": "SLCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "San Nicolas (E)",
+      "abreviatura": "SNI",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Santa Maria tumbaco (CC)",
+      "abreviatura": "SMTCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Scala Shoppping (CC)",
+      "abreviatura": "SCA",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Site center (EDIF)",
+      "abreviatura": "SCT",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Solanda (E)",
+      "abreviatura": "SOL",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Solis (E)",
+      "abreviatura": "SLS",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Sur 2 (A)",
+      "abreviatura": "SU2",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Swiss hotel (E)",
+      "abreviatura": "SWH",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Tababela (E)",
+      "abreviatura": "TAB",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Tabiazo (E)",
+      "abreviatura": "TBZ",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Tambillo (IP)",
+      "abreviatura": "TAM",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Tanda (E)",
+      "abreviatura": "TND",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Tarqui 11 (E)",
+      "abreviatura": "T11",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Tarqui 2",
+      "abreviatura": "TR2",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Terminal Quitumbe (NE)",
+      "abreviatura": "TQTB",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Torre Boreal (EDIF)",
+      "abreviatura": "TBOR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Troje (E)",
+      "abreviatura": "TRJ",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Tumbaco (E)",
+      "abreviatura": "TBC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Unicornio (CC)",
+      "abreviatura": "UNCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Uyumbicho (E)",
+      "abreviatura": "UYU",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Vasquez (E)",
+      "abreviatura": "VAQ",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Vilatuna (E)",
+      "abreviatura": "VIL",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Villa Cumbaya (CC)",
+      "abreviatura": "VCCC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Villalengua (E)",
+      "abreviatura": "VLG",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Whymper (E)",
+      "abreviatura": "WMP",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "WTC",
+      "abreviatura": "WTC",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Yaruqui (E)",
+      "abreviatura": "YRQ",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Zabala (E)",
+      "abreviatura": "ZAB",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Zaragoza (E)",
+      "abreviatura": "ZAR",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "CC.Garden Plaza (CC)",
+      "abreviatura": "CCGP",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "CC.Viu Plaza (CC)",
+      "abreviatura": "CCVP",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "CC.Vista Valle Shopping (CC)",
+      "abreviatura": "CCVV",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "CC.KOCOA PLAZA (CC)",
+      "abreviatura": "CCKP",
+      "ciudad": "UIO"
+    },
+    {
+      "nombre": "Santa Maria Santa Clara (CC)",
+      "abreviatura": "SMSC",
+      "ciudad": "UIO"
+    }
+  ]
+}

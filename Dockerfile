@@ -14,6 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN python -c "import easyocr; easyocr.Reader(['es', 'en'], gpu=False, verbose=False)"
 
 COPY app.py .
+COPY nodos.json .
 COPY MANGA_SELLADA.pt .
 COPY ETIQUETAS_FO_INGRESO.pt .
 COPY ETIQUETA_TAPA_MANGA.pt .

@@ -3,10 +3,21 @@ from pydantic import BaseModel
 from ultralytics import YOLO
 from PIL import Image
 from typing import Optional, List
-import base64, io, os, gc, threading, re, difflib
+import base64, io, os, gc, threading, re, difflib, json
 import requests as http_requests
 
 app = FastAPI(title="FiscAI YOLO API — Todos los modelos de manga")
+
+# ── Catálogo de nodos GIS (GYE + TS + UIO) ───────────────────────────────────
+_NODOS_PATH = os.path.join(os.path.dirname(__file__), 'nodos.json')
+try:
+    with open(_NODOS_PATH, encoding='utf-8') as _f:
+        _nodos_data = json.load(_f)
+    NODOS_ABREVIATURAS: List[str] = _nodos_data.get('abreviaturas', [])
+    print(f"[nodos] Catálogo cargado: {len(NODOS_ABREVIATURAS)} abreviaturas")
+except Exception as _e:
+    NODOS_ABREVIATURAS = []
+    print(f"[nodos] ADVERTENCIA: no se pudo cargar nodos.json — {_e}")
 
 # ── Lazy loading YOLO: solo 1 modelo en memoria a la vez ─────────────────────
 _model_lock  = threading.Lock()
@@ -118,12 +129,24 @@ def fuzzy_match_gis(texto: str, candidatos: List[str], cutoff: float = 0.80) -> 
 
 def _run_ocr(model_key: str, image: Image.Image,
              detections: list, gis_nombres: List[str]) -> list:
-    """Recorta cada etiqueta detectada, corre OCR y hace fuzzy match opcional."""
+    """Recorta cada etiqueta detectada, corre OCR y hace fuzzy match.
+
+    - etiquetas (foto 2): valida contra catálogo completo de nodos GIS (1 100+ abrev.)
+    - etiqueta-tapa (foto 3): valida contra gis_nombres (nomenclatura del técnico)
+    """
     label_class = LABEL_CLASS.get(model_key, "ETIQUETA_FO")
     etiquetas   = [d for d in detections if d["class_name"] == label_class]
 
     if not etiquetas:
         return []
+
+    # Determinar lista de candidatos según el modelo
+    if model_key == "etiquetas" and NODOS_ABREVIATURAS:
+        candidatos = NODOS_ABREVIATURAS          # catálogo completo ~1 100 abreviaturas
+    elif gis_nombres:
+        candidatos = gis_nombres                 # nomenclatura ingresada por el técnico
+    else:
+        candidatos = []
 
     reader  = _get_ocr_reader()
     w, h    = image.size
@@ -131,13 +154,12 @@ def _run_ocr(model_key: str, image: Image.Image,
 
     for i, det in enumerate(etiquetas):
         x1, y1, x2, y2 = [int(v) for v in det["bbox"]]
-        # Padding 10 px para no cortar bordes de la etiqueta
         x1 = max(0, x1 - 10);  y1 = max(0, y1 - 10)
         x2 = min(w, x2 + 10);  y2 = min(h, y2 + 10)
 
         try:
-            crop   = image.crop((x1, y1, x2, y2))
-            textos = reader.readtext(crop, detail=0, paragraph=True)
+            crop      = image.crop((x1, y1, x2, y2))
+            textos    = reader.readtext(crop, detail=0, paragraph=True)
             texto_raw = " ".join(textos).strip()
         except Exception as e:
             print(f"[OCR] Error en etiqueta {i}: {e}")
@@ -151,8 +173,8 @@ def _run_ocr(model_key: str, image: Image.Image,
             "texto_normalizado": normalizar_nomenclatura(texto_raw) if texto_raw else "",
         }
 
-        if gis_nombres and texto_raw:
-            entry["gis_match"] = fuzzy_match_gis(texto_raw, gis_nombres)
+        if candidatos and texto_raw:
+            entry["gis_match"] = fuzzy_match_gis(texto_raw, candidatos)
 
         results.append(entry)
 
@@ -381,10 +403,11 @@ def health():
     base = os.path.dirname(__file__)
     disponibles = [k for k, f in MODEL_FILES.items() if os.path.exists(os.path.join(base, f))]
     return {
-        "status":      "ok",
-        "disponibles": disponibles,
-        "cargados":    list(_model_cache.keys()),
-        "ocr_listo":   _ocr_reader is not None,
+        "status":        "ok",
+        "disponibles":   disponibles,
+        "cargados":      list(_model_cache.keys()),
+        "ocr_listo":     _ocr_reader is not None,
+        "nodos_gis":     len(NODOS_ABREVIATURAS),
     }
 
 
