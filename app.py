@@ -1,9 +1,10 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form
 from pydantic import BaseModel
-from ultralytics import YOLO
 from PIL import Image
 from typing import Optional, List
-import base64, io, os, gc, threading, re, difflib, json
+import base64, io, os, gc, threading, re, difflib, json, ast
+import numpy as np
+import onnxruntime as ort
 import requests as http_requests
 
 app = FastAPI(title="FiscAI YOLO API — Backup Render — Todos los modelos manga + ODF")
@@ -21,7 +22,7 @@ except Exception as _e:
 
 # ── Lazy loading: 1 modelo en RAM a la vez ────────────────────────────────────
 _model_lock  = threading.Lock()
-_model_cache: dict = {}
+_model_cache: dict = {}  # key → (session, class_names, input_name, imgsz)
 
 MODEL_FILES = {
     # ── Mangas estándar ──────────────────────────────────────────────────────
@@ -73,34 +74,136 @@ LABEL_CLASS = {
     "etiqueta-tapa":    "ETIQUETA_TAPA",
     "etiqueta-tapa-2h": "etiqueta",
     "ocr-login-2h":     "etiqueta",
-    "odf-frontal":      "ETIQUETA_ODF",   # etiqueta GIS en tapa frontal
+    "odf-frontal":      "ETIQUETA_ODF",
 }
 
-def _get_model(model_key: str) -> YOLO:
+
+# ── Inferencia ONNX pura (sin torch/ultralytics) ──────────────────────────────
+
+def _get_model(model_key: str):
+    """Retorna (session, class_names, input_name, imgsz). 1 modelo en RAM."""
     with _model_lock:
         if model_key not in _model_cache:
             for k in list(_model_cache.keys()):
                 del _model_cache[k]
             gc.collect()
             path = os.path.join(os.path.dirname(__file__), MODEL_FILES[model_key])
-            print(f"[lazy] Cargando modelo: {model_key} ({MODEL_FILES[model_key]})")
-            _model_cache[model_key] = YOLO(path)
-            print(f"[lazy] Modelo listo: {model_key}")
+            print(f"[lazy] Cargando ONNX: {model_key} ({MODEL_FILES[model_key]})", flush=True)
+            session = ort.InferenceSession(path, providers=['CPUExecutionProvider'])
+
+            # Nombres de clases embebidos en el metadata por ultralytics
+            meta = session.get_modelmeta().custom_metadata_map
+            names_str = meta.get('names', '{}')
+            try:
+                names_dict = ast.literal_eval(names_str)
+                class_names = [names_dict[i] for i in sorted(names_dict.keys())]
+            except Exception:
+                class_names = []
+
+            # Tamaño de entrada: shape [1, 3, H, W]
+            inp = session.get_inputs()[0]
+            input_name = inp.name
+            try:
+                imgsz = int(inp.shape[2])
+                if imgsz <= 0:
+                    imgsz = 640
+            except (TypeError, ValueError, IndexError):
+                imgsz = 640
+
+            print(f"[lazy] Listo: {model_key} imgsz={imgsz} clases={class_names}", flush=True)
+            _model_cache[model_key] = (session, class_names, input_name, imgsz)
         return _model_cache[model_key]
 
 
-# ── EasyOCR ───────────────────────────────────────────────────────────────────
-_ocr_lock   = threading.Lock()
-_ocr_reader = None
+def _nms(boxes: np.ndarray, scores: np.ndarray, iou_threshold: float = 0.45) -> list:
+    if len(boxes) == 0:
+        return []
+    x1, y1, x2, y2 = boxes[:, 0], boxes[:, 1], boxes[:, 2], boxes[:, 3]
+    areas = (x2 - x1) * (y2 - y1)
+    order = scores.argsort()[::-1]
+    keep = []
+    while len(order) > 0:
+        i = order[0]
+        keep.append(int(i))
+        if len(order) == 1:
+            break
+        inter_x1 = np.maximum(x1[i], x1[order[1:]])
+        inter_y1 = np.maximum(y1[i], y1[order[1:]])
+        inter_x2 = np.minimum(x2[i], x2[order[1:]])
+        inter_y2 = np.minimum(y2[i], y2[order[1:]])
+        inter = np.maximum(0, inter_x2 - inter_x1) * np.maximum(0, inter_y2 - inter_y1)
+        iou = inter / (areas[i] + areas[order[1:]] - inter + 1e-6)
+        order = order[1:][iou < iou_threshold]
+    return keep
+
+
+def _run_inference(model_key: str, image: Image.Image, conf: float) -> list:
+    """Inferencia ONNX. YOLOv8 output: [1, 4+nc, 8400]."""
+    session, class_names, input_name, imgsz = _get_model(model_key)
+
+    orig_w, orig_h = image.size
+    img_r = image.resize((imgsz, imgsz), Image.BILINEAR)
+    arr = np.array(img_r, dtype=np.float32) / 255.0
+    arr = arr.transpose(2, 0, 1)       # HWC → CHW
+    arr = np.expand_dims(arr, axis=0)  # [1, 3, H, W]
+
+    outputs = session.run(None, {input_name: arr})
+    out = outputs[0][0].T  # [8400, 4+nc]
+
+    xywh        = out[:, :4]
+    class_scores = out[:, 4:]
+    class_ids   = np.argmax(class_scores, axis=1)
+    confidences = np.max(class_scores, axis=1)
+
+    mask = confidences >= conf
+    if not mask.any():
+        return []
+    xywh        = xywh[mask]
+    confidences = confidences[mask]
+    class_ids   = class_ids[mask]
+
+    cx, cy, bw, bh = xywh[:, 0], xywh[:, 1], xywh[:, 2], xywh[:, 3]
+    x1 = (cx - bw / 2) / imgsz * orig_w
+    y1 = (cy - bh / 2) / imgsz * orig_h
+    x2 = (cx + bw / 2) / imgsz * orig_w
+    y2 = (cy + bh / 2) / imgsz * orig_h
+    boxes = np.stack([x1, y1, x2, y2], axis=1)
+
+    detections = []
+    for cls_id in np.unique(class_ids):
+        cmask = class_ids == cls_id
+        cb, cs = boxes[cmask], confidences[cmask]
+        for idx in _nms(cb, cs):
+            name = class_names[int(cls_id)] if int(cls_id) < len(class_names) else str(cls_id)
+            detections.append({
+                "class_id":   int(cls_id),
+                "class_name": name,
+                "confidence": round(float(cs[idx]), 4),
+                "bbox":       [round(float(cb[idx, 0]), 1), round(float(cb[idx, 1]), 1),
+                               round(float(cb[idx, 2]), 1), round(float(cb[idx, 3]), 1)],
+            })
+    return detections
+
+
+# ── EasyOCR (opcional — solo si está instalado con torch) ─────────────────────
+_ocr_lock    = threading.Lock()
+_ocr_reader  = None
+_ocr_disabled = False
 
 def _get_ocr_reader():
-    global _ocr_reader
+    global _ocr_reader, _ocr_disabled
+    if _ocr_disabled:
+        return None
     with _ocr_lock:
-        if _ocr_reader is None:
-            import easyocr
-            print("[OCR] Cargando EasyOCR reader (es+en)...")
-            _ocr_reader = easyocr.Reader(['es', 'en'], gpu=False, verbose=False)
-            print("[OCR] EasyOCR listo.")
+        if _ocr_reader is None and not _ocr_disabled:
+            try:
+                import easyocr
+                print("[OCR] Cargando EasyOCR reader (es+en)...")
+                _ocr_reader = easyocr.Reader(['es', 'en'], gpu=False, verbose=False)
+                print("[OCR] EasyOCR listo.")
+            except Exception as e:
+                print(f"[OCR] No disponible ({e}) — deshabilitado en backup.")
+                _ocr_disabled = True
     return _ocr_reader
 
 
@@ -135,6 +238,9 @@ def fuzzy_match_gis(texto: str, candidatos: List[str], cutoff: float = 0.80) -> 
 # ── OCR sobre bboxes ──────────────────────────────────────────────────────────
 def _run_ocr(model_key: str, image: Image.Image,
              detections: list, gis_nombres: List[str]) -> list:
+    reader = _get_ocr_reader()
+    if reader is None:
+        return []  # OCR no disponible en este despliegue
     label_class = LABEL_CLASS.get(model_key, "ETIQUETA_FO")
     etiquetas   = [d for d in detections if d["class_name"] == label_class]
     if not etiquetas:
@@ -145,7 +251,6 @@ def _run_ocr(model_key: str, image: Image.Image,
         candidatos = gis_nombres
     else:
         candidatos = []
-    reader  = _get_ocr_reader()
     w, h    = image.size
     results = []
     for i, det in enumerate(etiquetas):
@@ -211,7 +316,6 @@ def validate_panoramica_destapada(detections: list) -> dict:
     return {"clases": list(names), "no_conforme": no_conforme,
             "detecciones": len(detections), "aprobado": bool(detections) and not no_conforme}
 
-# ── Validadores 2H ────────────────────────────────────────────────────────────
 def validate_manga_2h(detections: list) -> dict:
     names = {d["class_name"] for d in detections}
     manga_ok    = "manga_completa"     in names
@@ -242,9 +346,7 @@ def validate_panoramica_f8_2h(detections: list) -> dict:
             "figura8_incorrecta": figura8_wrong,
             "aprobado": ("figura8" in names or "manga" in names) and not figura8_wrong}
 
-# ── Validadores ODF ───────────────────────────────────────────────────────────
 def validate_odf_generico(detections: list) -> dict:
-    """Validador genérico para modelos ODF: aprobado si hay ≥1 detección."""
     names = {d["class_name"] for d in detections}
     return {"clases": list(names), "detecciones": len(detections),
             "aprobado": bool(detections)}
@@ -304,17 +406,7 @@ def _run_model(model_key: str, image: Image.Image,
     if max_conf is not None and conf > max_conf:
         conf = max_conf
 
-    model  = _get_model(model_key)
-    result = model(image, conf=conf, verbose=False)
-    detections = []
-    for r in result:
-        for box in r.boxes:
-            detections.append({
-                "class_id":   int(box.cls[0]),
-                "class_name": model.names[int(box.cls[0])],
-                "confidence": round(float(box.conf[0]), 4),
-                "bbox":       [round(v, 1) for v in box.xyxy[0].tolist()],
-            })
+    detections = _run_inference(model_key, image, conf)
 
     validator  = VALIDATORS.get(model_key, validate_odf_generico)
     validation = validator(detections)
@@ -355,11 +447,7 @@ def health():
     }
 
 
-# ── Endpoint compatible con Telconet (mismo formato URL + respuesta) ───────────
-# Permite usar este servicio como drop-in replacement de la API Telconet:
-#   POST /predict/fibra/{endpoint}/json?confidence={conf}
-# Body: multipart/form-data, campo "file" (imagen)
-# Respuesta: { detections_count, detections: [{class_name, confidence, bbox}] }
+# Endpoint compatible con Telconet (mismo formato URL + respuesta)
 @app.post("/predict/fibra/{tn_endpoint}/json")
 async def predict_telconet_compat(
     tn_endpoint: str,
@@ -379,7 +467,6 @@ async def predict_telconet_compat(
         raise HTTPException(status_code=400, detail=f"Imagen inválida: {e}")
 
     r = _run_model(model_key, img, confidence)
-    # Respuesta con el MISMO formato que Telconet para que yolo-client.js no necesite cambios.
     return {
         "detections_count": r["count"],
         "detections":       r["detections"],
@@ -388,8 +475,14 @@ async def predict_telconet_compat(
     }
 
 
+class PredictRequest(BaseModel):
+    image_base64: str
+    model:        str       = "etiquetas"
+    conf:         float     = 0.25
+    gis_nombres:  List[str] = []
+
 @app.post("/predict")
-def predict(req: "PredictRequest"):
+def predict(req: PredictRequest):
     image = decode_image(req.image_base64)
     return _run_model(req.model, image, req.conf, req.gis_nombres)
 
@@ -415,12 +508,6 @@ class PredictUrlRequest(BaseModel):
     model:        str       = "etiquetas"
     conf:         float     = 0.25
     bearer_token: Optional[str] = None
-    gis_nombres:  List[str] = []
-
-class PredictRequest(BaseModel):
-    image_base64: str
-    model:        str       = "etiquetas"
-    conf:         float     = 0.25
     gis_nombres:  List[str] = []
 
 @app.post("/predict-url")

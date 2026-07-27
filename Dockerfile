@@ -6,11 +6,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
+# Runtime deps: sin torch, sin ultralytics, sin easyocr (~150 MB total)
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-
-# Pre-descargar modelos EasyOCR en el build
-RUN python -c "import easyocr; easyocr.Reader(['es', 'en'], gpu=False, verbose=False)"
 
 COPY app.py .
 COPY nodos.json .
@@ -37,11 +35,11 @@ COPY INGRESO_FO_AL_ODF_v1.pt .
 COPY PANORAMICA_FRONTAL_ODF_v1.pt .
 COPY PANORAMICA_POSTERIOR_ODF_v1.pt .
 
-# Convertir todos los .pt a ONNX y eliminarlos.
-# ONNX + onnxruntime necesita ~75% menos RAM que PyTorch (150MB vs 600MB por modelo),
-# lo que permite correr en el tier gratuito de Render (512 MB).
-# Este layer queda cacheado: rebuilds por cambios de código no re-exportan los modelos.
-RUN python -c "
+# Build-time: instalar ultralytics+onnxsim, exportar .pt → .onnx, eliminar torch.
+# Todo en un RUN para que torch no quede en ninguna capa de la imagen final.
+# RAM en runtime: ~150 MB (onnxruntime + numpy + fastapi) vs ~600 MB con torch.
+RUN pip install --no-cache-dir ultralytics onnxsim && \
+    python -c "
 import os, glob
 from ultralytics import YOLO
 pts = sorted(glob.glob('/app/*.pt'))
@@ -53,9 +51,9 @@ for pt in pts:
     os.remove(pt)
     print(f'[onnx-export] {name.replace(\".pt\",\".onnx\")} listo', flush=True)
 print('[onnx-export] Completado.', flush=True)
-"
+" && \
+    pip uninstall -y torch torchvision torchaudio ultralytics onnxsim 2>/dev/null || true && \
+    pip cache purge 2>/dev/null || true
 
-# Render asigna el puerto via $PORT (default 10000)
 EXPOSE 10000
-
 CMD ["sh", "-c", "uvicorn app:app --host 0.0.0.0 --port ${PORT:-10000}"]
