@@ -37,6 +37,24 @@ COPY INGRESO_FO_AL_ODF_v1.pt .
 COPY PANORAMICA_FRONTAL_ODF_v1.pt .
 COPY PANORAMICA_POSTERIOR_ODF_v1.pt .
 
+# Convertir todos los .pt a ONNX y eliminarlos.
+# ONNX + onnxruntime necesita ~75% menos RAM que PyTorch (150MB vs 600MB por modelo),
+# lo que permite correr en el tier gratuito de Render (512 MB).
+# Este layer queda cacheado: rebuilds por cambios de código no re-exportan los modelos.
+RUN python -c "
+import os, glob
+from ultralytics import YOLO
+pts = sorted(glob.glob('/app/*.pt'))
+print(f'[onnx-export] {len(pts)} modelos a convertir', flush=True)
+for pt in pts:
+    name = os.path.basename(pt)
+    print(f'[onnx-export] {name} ...', flush=True)
+    YOLO(pt).export(format='onnx', simplify=True)
+    os.remove(pt)
+    print(f'[onnx-export] {name.replace(\".pt\",\".onnx\")} listo', flush=True)
+print('[onnx-export] Completado.', flush=True)
+"
+
 # Render asigna el puerto via $PORT (default 10000)
 EXPOSE 10000
 

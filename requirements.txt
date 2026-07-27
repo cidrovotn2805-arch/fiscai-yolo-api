@@ -5,3 +5,5 @@ pillow
 python-multipart
 requests
 easyocr
+onnxruntime
+onnxsim

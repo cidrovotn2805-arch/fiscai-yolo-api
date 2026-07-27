@@ -25,25 +25,25 @@ _model_cache: dict = {}
 
 MODEL_FILES = {
     # ── Mangas estándar ──────────────────────────────────────────────────────
-    "manga":              "MANGA_SELLADA_V2.pt",
-    "etiquetas":          "MANGA_ETIQUETAS_FO_INGRESO_v2.pt",
-    "etiqueta-tapa":      "ETIQUETA_TAPA_MANGA_v2.pt",
-    "ubicacion-manga":    "UBICACION_MANGA_v2.1.pt",
-    "panoramica-f8":      "PANORAMICA_FIGURA_8_V2.pt",
-    "casetera-manga":     "CASETERA_MANGA.pt",
-    "panoramica-destapada": "PANORAMICA_MANGA_DESTAPADA.pt",
+    "manga":              "MANGA_SELLADA_V2.onnx",
+    "etiquetas":          "MANGA_ETIQUETAS_FO_INGRESO_v2.onnx",
+    "etiqueta-tapa":      "ETIQUETA_TAPA_MANGA_v2.onnx",
+    "ubicacion-manga":    "UBICACION_MANGA_v2.1.onnx",
+    "panoramica-f8":      "PANORAMICA_FIGURA_8_V2.onnx",
+    "casetera-manga":     "CASETERA_MANGA.onnx",
+    "panoramica-destapada": "PANORAMICA_MANGA_DESTAPADA.onnx",
     # ── Mangas 2 hilos ───────────────────────────────────────────────────────
-    "manga-2h":           "2H_MANGA_SELLADA.pt",
-    "etiqueta-tapa-2h":   "2H_ETIQUETA_TAPA_MANGA.pt",
-    "ubicacion-manga-2h": "2H_UBICACION_MANGA.pt",
-    "panoramica-f8-2h":   "2H_PANORAMICA_FIGURA_8.pt",
-    "ocr-login-2h":       "2H_ETIQUETA_TAPA_MANGA.pt",
+    "manga-2h":           "2H_MANGA_SELLADA.onnx",
+    "etiqueta-tapa-2h":   "2H_ETIQUETA_TAPA_MANGA.onnx",
+    "ubicacion-manga-2h": "2H_UBICACION_MANGA.onnx",
+    "panoramica-f8-2h":   "2H_PANORAMICA_FIGURA_8.onnx",
+    "ocr-login-2h":       "2H_ETIQUETA_TAPA_MANGA.onnx",
     # ── ODF ──────────────────────────────────────────────────────────────────
-    "casetera-odf":         "CASETERA_ODF_v1.pt",
-    "caseteras-completas":  "CASETERAS_COMPLETAS_v1.pt",
-    "odf-aseguramiento":    "INGRESO_FO_AL_ODF_v1.pt",
-    "odf-frontal":          "PANORAMICA_FRONTAL_ODF_v1.pt",
-    "odf-posterior":        "PANORAMICA_POSTERIOR_ODF_v1.pt",
+    "casetera-odf":         "CASETERA_ODF_v1.onnx",
+    "caseteras-completas":  "CASETERAS_COMPLETAS_v1.onnx",
+    "odf-aseguramiento":    "INGRESO_FO_AL_ODF_v1.onnx",
+    "odf-frontal":          "PANORAMICA_FRONTAL_ODF_v1.onnx",
+    "odf-posterior":        "PANORAMICA_POSTERIOR_ODF_v1.onnx",
 }
 
 # Mapa Telconet endpoint → model key interno
