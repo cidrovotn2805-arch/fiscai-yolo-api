@@ -89,7 +89,20 @@ def _get_model(model_key: str):
             gc.collect()
             path = os.path.join(os.path.dirname(__file__), MODEL_FILES[model_key])
             print(f"[lazy] Cargando ONNX: {model_key} ({MODEL_FILES[model_key]})", flush=True)
-            session = ort.InferenceSession(path, providers=['CPUExecutionProvider'])
+
+            # Opciones para minimizar RAM en Render free (512 MB).
+            # ORT_DISABLE_ALL evita optimización de grafo (costosa en RAM).
+            # Single-thread + sin arena evita pre-allocaciones extra.
+            sess_opts = ort.SessionOptions()
+            sess_opts.graph_optimization_level = ort.GraphOptimizationLevel.ORT_DISABLE_ALL
+            sess_opts.execution_mode = ort.ExecutionMode.ORT_SEQUENTIAL
+            sess_opts.inter_op_num_threads = 1
+            sess_opts.intra_op_num_threads = 1
+            sess_opts.enable_mem_pattern = False
+            sess_opts.enable_cpu_mem_arena = False
+
+            providers = [('CPUExecutionProvider', {'arena_extend_strategy': 'kSameAsRequested'})]
+            session = ort.InferenceSession(path, sess_options=sess_opts, providers=providers)
 
             # Nombres de clases embebidos en el metadata por ultralytics
             meta = session.get_modelmeta().custom_metadata_map
