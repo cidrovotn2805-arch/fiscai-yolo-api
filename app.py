@@ -454,6 +454,7 @@ async def predict_telconet_compat(
     confidence:  float      = 0.25,
     file:        UploadFile = File(...),
 ):
+    import traceback
     model_key = TN_EP_MAP.get(tn_endpoint)
     if not model_key:
         raise HTTPException(
@@ -466,7 +467,15 @@ async def predict_telconet_compat(
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Imagen inválida: {e}")
 
-    r = _run_model(model_key, img, confidence)
+    try:
+        r = _run_model(model_key, img, confidence)
+    except HTTPException:
+        raise
+    except Exception as e:
+        tb = traceback.format_exc()
+        print(f"[ERROR] predict {model_key}: {e}\n{tb}", flush=True)
+        raise HTTPException(status_code=500, detail=f"{type(e).__name__}: {e}\n{tb}")
+
     return {
         "detections_count": r["count"],
         "detections":       r["detections"],
