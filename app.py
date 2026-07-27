@@ -434,6 +434,32 @@ def _run_model(model_key: str, image: Image.Image,
 
 # ── Endpoints ─────────────────────────────────────────────────────────────────
 
+@app.get("/debug-model/{model_key}")
+def debug_model(model_key: str):
+    """Carga el modelo y devuelve metadata (sin inferencia). Para diagnóstico."""
+    import traceback, gc
+    if model_key not in MODEL_FILES:
+        raise HTTPException(status_code=404, detail=f"Modelo desconocido: {model_key}")
+    try:
+        session, class_names, input_name, imgsz = _get_model(model_key)
+        inp  = session.get_inputs()[0]
+        out  = session.get_outputs()[0]
+        return {
+            "modelo":       model_key,
+            "archivo":      MODEL_FILES[model_key],
+            "input_name":   input_name,
+            "input_shape":  list(inp.shape),
+            "output_name":  out.name,
+            "output_shape": list(out.shape),
+            "class_names":  class_names,
+            "imgsz":        imgsz,
+            "status":       "ok",
+        }
+    except Exception as e:
+        tb = traceback.format_exc()
+        raise HTTPException(status_code=500, detail=f"{type(e).__name__}: {e}\n{tb}")
+
+
 @app.get("/health")
 def health():
     base = os.path.dirname(__file__)
