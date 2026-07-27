@@ -10,7 +10,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY app.py .
+# ── Modelos .pt (raramente cambian → antes del export para cache) ─────────────
 COPY nodos.json .
 
 # ── Mangas estándar ───────────────────────────────────────────────────────────
@@ -35,9 +35,9 @@ COPY INGRESO_FO_AL_ODF_v1.pt .
 COPY PANORAMICA_FRONTAL_ODF_v1.pt .
 COPY PANORAMICA_POSTERIOR_ODF_v1.pt .
 
-# Build-time: instalar ultralytics+onnxsim, exportar .pt → .onnx, eliminar torch.
-# Todo en un RUN para que torch no quede en ninguna capa de la imagen final.
-# RAM en runtime: ~150 MB (onnxruntime + numpy + fastapi) vs ~600 MB con torch.
+# Build-time: instalar, exportar, limpiar en un solo layer.
+# COPY .pt está antes → este layer se cachea mientras los .pt no cambien.
+# RAM runtime: ~150 MB (onnxruntime + numpy + fastapi) vs ~600 MB con torch.
 RUN pip install --no-cache-dir ultralytics onnxsim && \
     python -c "
 import os, glob
@@ -54,6 +54,9 @@ print('[onnx-export] Completado.', flush=True)
 " && \
     pip uninstall -y torch torchvision torchaudio ultralytics onnxsim 2>/dev/null || true && \
     pip cache purge 2>/dev/null || true
+
+# ── App code (cambia frecuentemente → al final para cache eficiente) ──────────
+COPY app.py .
 
 EXPOSE 10000
 CMD ["sh", "-c", "uvicorn app:app --host 0.0.0.0 --port ${PORT:-10000}"]
